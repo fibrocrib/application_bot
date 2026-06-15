@@ -15,6 +15,8 @@ import re
 from dataclasses import dataclass
 
 from . import claude_subprocess as cs
+from .matcher import FitVerdict, score as matcher_score
+from .models import JobLead
 
 log = logging.getLogger(__name__)
 
@@ -134,3 +136,55 @@ def location_ok(
     except Exception as e:
         log.warning("location_ok parse failed: %s — %r", e, text[:200])
         return LocationVerdict(False, "parse error")
+
+
+# ---------- combined per-lead evaluation (for parallel execution) ----------
+
+@dataclass
+class FilterResult:
+    """All three filter outputs for one lead. skip_reason is None if the lead
+    survives every gate and should proceed to careers_page + applier."""
+    lead: JobLead
+    verdict: FitVerdict | None = None
+    locv: LocationVerdict | None = None
+    skip_reason: str | None = None
+
+    @property
+    def passed(self) -> bool:
+        return self.skip_reason is None
+
+    @property
+    def fit_score(self) -> float:
+        return self.verdict.score if self.verdict else 0.0
+
+
+def evaluate_lead(lead: JobLead, *, cv_text: str, salary_floor: int,
+                  threshold: float, base_location: str) -> FilterResult:
+    """Run the three filter stages for one lead end-to-end. Safe to call from
+    many threads concurrently — each underlying Claude call is a separate
+    subprocess, so there's no shared SDK state to race."""
+    ok, why = salary_ok(lead.description or "", floor_gbp=salary_floor)
+    if not ok:
+        return FilterResult(lead=lead, skip_reason=f"salary: {why}")
+
+    verdict = matcher_score(
+        cv_text, lead.title, lead.description or lead.title,
+        location=lead.location, threshold=threshold,
+    )
+    if not verdict.should_apply:
+        return FilterResult(
+            lead=lead, verdict=verdict,
+            skip_reason=f"fit {verdict.score:.2f}: {verdict.reason}",
+        )
+
+    locv = location_ok(
+        lead.title, lead.company, lead.location,
+        lead.description or "", base_location=base_location,
+    )
+    if not locv.worth_it:
+        return FilterResult(
+            lead=lead, verdict=verdict, locv=locv,
+            skip_reason=f"relocation not worth it: {locv.reason}",
+        )
+
+    return FilterResult(lead=lead, verdict=verdict, locv=locv)

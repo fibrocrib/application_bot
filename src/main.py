@@ -6,12 +6,13 @@ import datetime as dt
 import logging
 import os
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 import yaml
 
 from . import (applier, careers_page, cv, cv_tailor, discover, filters,
-               matcher, notifier, state, writer)
+               notifier, state, writer)
 from .models import ApplicationResult
 
 logging.basicConfig(
@@ -39,6 +40,7 @@ def main() -> int:
     threshold = float(cfg.get("fit_threshold", 0.6))
     salary_floor = int(cfg.get("salary_floor_gbp", 40_000))
     base_location = cfg.get("base_location", "London, UK")
+    filter_workers = int(cfg.get("filter_concurrency", 6))
 
     # DRY_RUN_OVERRIDE is set by manual workflow_dispatch runs ("true"/"false"
     # to force, anything else falls through to the config value).
@@ -73,62 +75,63 @@ def main() -> int:
     results: list[ApplicationResult] = []
     applied_count = 0
     total = len(leads)
-    fresh = sum(1 for lead in leads
-                if not state.already_seen(seen, lead.company, lead.title))
-    log.info("processing %d leads (%d fresh, %d already seen)", total, fresh, total - fresh)
+    fresh_leads = [l for l in leads
+                   if not state.already_seen(seen, l.company, l.title)]
+    log.info("processing %d leads (%d fresh, %d already seen)",
+             total, len(fresh_leads), total - len(fresh_leads))
 
-    for idx, lead in enumerate(leads, 1):
+    # -------- Phase 1: parallel filter --------
+    log.info("phase 1: salary + fit + relocation, max_workers=%d",
+             filter_workers)
+    filter_results: list[filters.FilterResult] = []
+    with ThreadPoolExecutor(max_workers=filter_workers) as pool:
+        futures = {
+            pool.submit(filters.evaluate_lead, lead,
+                        cv_text=cv_text, salary_floor=salary_floor,
+                        threshold=threshold, base_location=base_location): lead
+            for lead in fresh_leads
+        }
+        for i, fut in enumerate(as_completed(futures), 1):
+            try:
+                fr = fut.result()
+            except Exception as e:
+                lead = futures[fut]
+                log.warning("[%d/%d] evaluate failed for %s/%s: %s",
+                            i, len(fresh_leads), lead.company, lead.title, e)
+                fr = filters.FilterResult(lead=lead, skip_reason=f"eval error: {e}")
+            verdict = "PASS" if fr.passed else f"SKIP — {fr.skip_reason}"
+            log.info("[%d/%d] %s — %s @ %s  · %s",
+                     i, len(fresh_leads), fr.lead.company, fr.lead.title,
+                     fr.lead.location or "?", verdict)
+            filter_results.append(fr)
+
+    passes = [fr for fr in filter_results if fr.passed]
+    log.info("phase 1 done: %d pass / %d skip", len(passes),
+             len(filter_results) - len(passes))
+
+    # Record every skip up-front; passes are recorded after the apply attempt.
+    for fr in filter_results:
+        if not fr.passed:
+            r = ApplicationResult(lead=fr.lead, status="skipped",
+                                   reason=fr.skip_reason or "",
+                                   fit_score=fr.fit_score)
+            results.append(r)
+            _record(seen, fr.lead, r, fr.fit_score)
+
+    # -------- Phase 2: sequential apply --------
+    log.info("phase 2: careers → writer → tailor → applier (sequential, cap=%d)",
+             daily_cap)
+
+    for idx, fr in enumerate(passes, 1):
         if applied_count >= daily_cap:
             log.info("daily cap reached (%d), stopping", daily_cap)
             break
-        if state.already_seen(seen, lead.company, lead.title):
-            log.info("[%d/%d] %s — %s  · already seen, skipping",
-                     idx, total, lead.company, lead.title)
-            continue
 
-        loc_str = f" @ {lead.location}" if lead.location else ""
-        log.info("[%d/%d] %s — %s%s  · source=%s",
-                 idx, total, lead.company, lead.title, loc_str, lead.source)
-
-        # 1. cheap salary regex
-        ok, why = filters.salary_ok(lead.description or "", floor_gbp=salary_floor)
-        if not ok:
-            log.info("    salary: SKIP — %s", why)
-            r = ApplicationResult(lead=lead, status="skipped",
-                                   reason=f"salary: {why}")
-            results.append(r)
-            _record(seen, lead, r, 0.0)
-            continue
-        log.info("    salary: ok (%s)", why)
-
-        # 2. fit
-        verdict = matcher.score(
-            cv_text, lead.title, lead.description or lead.title,
-            location=lead.location, threshold=threshold,
-        )
-        if not verdict.should_apply:
-            log.info("    fit %.2f: SKIP — %s", verdict.score, verdict.reason)
-            r = ApplicationResult(lead=lead, status="skipped",
-                                   reason=f"fit {verdict.score:.2f}: {verdict.reason}")
-            results.append(r)
-            _record(seen, lead, r, verdict.score)
-            continue
-        log.info("    fit %.2f: ok — %s", verdict.score, verdict.reason)
-
-        # 3. relocation
-        locv = filters.location_ok(
-            lead.title, lead.company, lead.location,
-            lead.description or "", base_location=base_location,
-        )
-        if not locv.worth_it:
-            log.info("    relocation: SKIP — %s", locv.reason)
-            r = ApplicationResult(lead=lead, status="skipped",
-                                   reason=f"relocation not worth it: {locv.reason}",
-                                   fit_score=verdict.score)
-            results.append(r)
-            _record(seen, lead, r, verdict.score)
-            continue
-        log.info("    relocation: ok — %s", locv.reason)
+        lead = fr.lead
+        verdict = fr.verdict
+        log.info("[%d/%d apply] %s — %s @ %s  · fit %.2f",
+                 idx, len(passes), lead.company, lead.title,
+                 lead.location or "?", verdict.score)
 
         careers = careers_page.resolve(lead.company)
         if not careers:
