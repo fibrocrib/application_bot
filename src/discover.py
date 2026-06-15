@@ -38,8 +38,9 @@ def discover(
             seen.add(lead.dedupe_key())
             leads.append(lead)
 
-    for q in queries:
+    for i, q in enumerate(queries, 1):
         term = q["term"]
+        before = len(leads)
         try:
             take(aggregators.search(
                 term,
@@ -50,19 +51,28 @@ def discover(
             ))
         except Exception as e:
             log.warning("aggregator search failed for %r: %s", term, e)
+        log.info("  [%d/%d aggregator] %r @ %s — %d new leads (total %d)",
+                 i, len(queries), term, q.get("location") or "*",
+                 len(leads) - before, len(leads))
 
-    for q in gov_uk_queries or []:
+    for i, q in enumerate(gov_uk_queries or [], 1):
         term = q["term"]
+        before = len(leads)
         try:
             take(gov_uk.search(term, limit=per_query_limit))
         except Exception as e:
             log.warning("gov_uk search failed for %r: %s", term, e)
+        log.info("  [%d/%d gov_uk] %r — %d new leads (total %d)",
+                 i, len(gov_uk_queries), term, len(leads) - before, len(leads))
 
-    for q in gov_eu_queries or []:
+    for i, q in enumerate(gov_eu_queries or [], 1):
         term = q["term"]
+        before = len(leads)
         try:
             take(gov_eu.search(term, limit=per_query_limit))
         except Exception as e:
             log.warning("gov_eu search failed for %r: %s", term, e)
+        log.info("  [%d/%d gov_eu] %r — %d new leads (total %d)",
+                 i, len(gov_eu_queries), term, len(leads) - before, len(leads))
 
     return leads

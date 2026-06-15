@@ -93,8 +93,15 @@ jobs:
         run: |
           git config user.name "application-bot"
           git config user.email "bot@users.noreply.github.com"
+          BRANCH="${GITHUB_REF_NAME:-main}"
+          # Reconcile with any pushes that landed while the bot was running,
+          # so our push is fast-forward. --autostash keeps state.json safe
+          # across the rebase. We never fail the job on a push failure —
+          # losing one run's state.json update only causes some duplicate
+          # work next time, not a hard error.
+          git pull --rebase --autostash origin "$BRANCH" || true
           git add state.json || true
           if ! git diff --cached --quiet; then
             git commit -m "chore: update state after run ${{ github.run_id }}"
-            git push
+            git push origin "$BRANCH" || echo "::warning::state.json push failed; will retry next run"
           fi

@@ -72,22 +72,34 @@ def main() -> int:
 
     results: list[ApplicationResult] = []
     applied_count = 0
+    total = len(leads)
+    fresh = sum(1 for lead in leads
+                if not state.already_seen(seen, lead.company, lead.title))
+    log.info("processing %d leads (%d fresh, %d already seen)", total, fresh, total - fresh)
 
-    for lead in leads:
+    for idx, lead in enumerate(leads, 1):
         if applied_count >= daily_cap:
             log.info("daily cap reached (%d), stopping", daily_cap)
             break
         if state.already_seen(seen, lead.company, lead.title):
+            log.info("[%d/%d] %s — %s  · already seen, skipping",
+                     idx, total, lead.company, lead.title)
             continue
+
+        loc_str = f" @ {lead.location}" if lead.location else ""
+        log.info("[%d/%d] %s — %s%s  · source=%s",
+                 idx, total, lead.company, lead.title, loc_str, lead.source)
 
         # 1. cheap salary regex
         ok, why = filters.salary_ok(lead.description or "", floor_gbp=salary_floor)
         if not ok:
+            log.info("    salary: SKIP — %s", why)
             r = ApplicationResult(lead=lead, status="skipped",
                                    reason=f"salary: {why}")
             results.append(r)
             _record(seen, lead, r, 0.0)
             continue
+        log.info("    salary: ok (%s)", why)
 
         # 2. fit
         verdict = matcher.score(
@@ -95,11 +107,13 @@ def main() -> int:
             location=lead.location, threshold=threshold,
         )
         if not verdict.should_apply:
+            log.info("    fit %.2f: SKIP — %s", verdict.score, verdict.reason)
             r = ApplicationResult(lead=lead, status="skipped",
                                    reason=f"fit {verdict.score:.2f}: {verdict.reason}")
             results.append(r)
             _record(seen, lead, r, verdict.score)
             continue
+        log.info("    fit %.2f: ok — %s", verdict.score, verdict.reason)
 
         # 3. relocation
         locv = filters.location_ok(
@@ -107,23 +121,28 @@ def main() -> int:
             lead.description or "", base_location=base_location,
         )
         if not locv.worth_it:
+            log.info("    relocation: SKIP — %s", locv.reason)
             r = ApplicationResult(lead=lead, status="skipped",
                                    reason=f"relocation not worth it: {locv.reason}",
                                    fit_score=verdict.score)
             results.append(r)
             _record(seen, lead, r, verdict.score)
             continue
+        log.info("    relocation: ok — %s", locv.reason)
 
         careers = careers_page.resolve(lead.company)
         if not careers:
+            log.info("    careers page: SKIP — could not resolve")
             r = ApplicationResult(lead=lead, status="skipped",
                                    reason="careers page not resolved",
                                    fit_score=verdict.score)
             results.append(r)
             _record(seen, lead, r, verdict.score)
             continue
+        log.info("    careers page: %s", careers)
 
         try:
+            log.info("    writing personal statement...")
             statement = writer.write(
                 cv_text=cv_text,
                 job_title=lead.title,
@@ -132,15 +151,17 @@ def main() -> int:
                 out_dir=STATEMENTS_DIR,
             )
         except Exception as e:
-            log.warning("statement write failed for %s/%s: %s", lead.company, lead.title, e)
+            log.warning("    statement: FAIL — %s", e)
             r = ApplicationResult(lead=lead, status="failed",
                                    reason=f"statement: {e}",
                                    fit_score=verdict.score)
             results.append(r)
             _record(seen, lead, r, verdict.score)
             continue
+        log.info("    statement: %d words → %s", len(statement.text.split()), statement.pdf_path)
 
         try:
+            log.info("    tailoring CV summary for this role...")
             _, tailored_cv_path = cv_tailor.tailor(
                 cv_text=cv_text,
                 job_title=lead.title,
@@ -148,11 +169,12 @@ def main() -> int:
                 job_description=lead.description or lead.title,
                 out_dir=STATEMENTS_DIR,
             )
+            log.info("    tailored CV: %s", tailored_cv_path)
         except Exception as e:
-            log.warning("cv tailor failed for %s/%s: %s — falling back to default cv",
-                        lead.company, lead.title, e)
+            log.warning("    cv tailor failed (%s) — falling back to default CV", e)
             tailored_cv_path = cv_path
 
+        log.info("    running browser agent...")
         out = applier.apply(applier.AgentInput(
             careers_url=careers,
             role_title=lead.title,
@@ -163,6 +185,7 @@ def main() -> int:
             statement_pdf_path=statement.pdf_path,
             dry_run=dry_run,
         ))
+        log.info("    agent: %s (%d steps) — %s", out.status, out.steps_used, out.note)
 
         r = ApplicationResult(
             lead=lead, status=out.status, reason=out.note,
@@ -177,6 +200,7 @@ def main() -> int:
             _record(seen, lead, r, verdict.score)
         if r.status == "applied":
             applied_count += 1
+            log.info("    applied count: %d / %d", applied_count, daily_cap)
 
     state.save(seen)
 
