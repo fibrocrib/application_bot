@@ -15,14 +15,21 @@ MODEL_FAST = "claude-haiku-4-5-20251001"
 MODEL_SMART = "claude-sonnet-4-6"
 
 
+# max_retries=5 + 600s timeout: the SDK auto-retries 429s using the
+# Retry-After header with exponential backoff. Max plan rate limits in
+# particular can return Retry-After of 30–60s, so we tolerate ~5 minutes of
+# patience per call rather than failing the lead.
+_CLIENT_KWARGS = {"max_retries": 5, "timeout": 600.0}
+
+
 @lru_cache(maxsize=1)
 def client() -> Anthropic:
     oauth = os.environ.get("CLAUDE_CODE_OAUTH_TOKEN")
     if oauth:
-        return Anthropic(auth_token=oauth)
+        return Anthropic(auth_token=oauth, **_CLIENT_KWARGS)
     key = os.environ.get("ANTHROPIC_API_KEY")
     if key:
-        return Anthropic(api_key=key)
+        return Anthropic(api_key=key, **_CLIENT_KWARGS)
     raise RuntimeError(
         "Neither CLAUDE_CODE_OAUTH_TOKEN nor ANTHROPIC_API_KEY is set. "
         "Run `claude setup-token` to generate a Max OAuth token, or set an "
