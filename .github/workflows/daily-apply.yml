@@ -3,7 +3,16 @@ name: daily-apply
 on:
   schedule:
     - cron: '0 8 * * 1-5'   # 08:00 UTC, Mon–Fri
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Override dry_run for this manual run"
+        type: choice
+        default: from-config
+        options:
+          - from-config
+          - 'true'
+          - 'false'
 
 permissions:
   contents: write             # so we can commit state.json back
@@ -18,6 +27,10 @@ jobs:
     timeout-minutes: 90
 
     env:
+      # Max-plan OAuth token (preferred). Generate locally with `claude setup-token`,
+      # then store as a repo secret. Bills against your Max subscription.
+      # ANTHROPIC_API_KEY is an optional fallback for pay-as-you-go callers.
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       # Brevo SMTP relay — set these as repo secrets.
       # SMTP_USER = your Brevo login email (must be a verified sender)
@@ -27,6 +40,7 @@ jobs:
       SMTP_USER: ${{ secrets.SMTP_USER }}
       SMTP_PASS: ${{ secrets.SMTP_PASS }}
       DIGEST_TO: ${{ secrets.DIGEST_TO }}
+      DRY_RUN_OVERRIDE: ${{ inputs.dry_run }}   # empty on scheduled cron runs
       PYTHONUNBUFFERED: '1'
 
     steps:

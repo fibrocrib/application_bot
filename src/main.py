@@ -37,9 +37,20 @@ def main() -> int:
     cv_path = cfg["cv_path"]
     daily_cap = int(cfg.get("daily_cap", 10))
     threshold = float(cfg.get("fit_threshold", 0.6))
-    dry_run = bool(cfg.get("dry_run", False))
     salary_floor = int(cfg.get("salary_floor_gbp", 40_000))
     base_location = cfg.get("base_location", "London, UK")
+
+    # DRY_RUN_OVERRIDE is set by manual workflow_dispatch runs ("true"/"false"
+    # to force, anything else falls through to the config value).
+    override = (os.environ.get("DRY_RUN_OVERRIDE") or "").strip().lower()
+    if override == "true":
+        dry_run = True
+        log.info("dry_run forced TRUE by workflow input")
+    elif override == "false":
+        dry_run = False
+        log.info("dry_run forced FALSE by workflow input")
+    else:
+        dry_run = bool(cfg.get("dry_run", False))
     if dry_run:
         log.info("DRY RUN — forms will be filled but not submitted")
     log.info("salary floor: £%s    base location: %s", f"{salary_floor:,}", base_location)
