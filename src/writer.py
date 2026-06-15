@@ -35,9 +35,12 @@ SYSTEM = """You write short, specific, honest cover letters for job applications
 ABSOLUTE OUTPUT RULES — your reply will be uploaded verbatim to the company:
 - Output ONLY the body of the letter. No preamble like "Here is", no "Dear Hiring Manager",
   no sign-off, no signature, no "[Your Name]" — just the body paragraphs.
-- NEVER include placeholder text in any form: no [brackets], no {curly braces},
-  no "(insert ...)", no TODOs, no "your specific X here". Every sentence must be
-  publishable as-is.
+- NEVER include inline citations, source titles, link text, web-search result
+  titles, or any text in square brackets. If you searched the web, synthesise
+  what you learned into your own prose — do not quote titles or URLs.
+- NEVER include placeholder text in any form: no [Your Name], no [Specific
+  Project], no {company}, no "(insert ...)", no TODOs, no "your X here".
+  Every sentence must be publishable as-is.
 - NEVER ask the user for clarification or extra information. You have access to
   the web_search tool — if you need a specific fact about the company (their
   product, mission, recent funding, a relevant news item, the team's focus),
@@ -53,14 +56,35 @@ CONTENT RULES:
 - Close with availability/enthusiasm in one sentence — still no signature."""
 
 
+# Bracket patterns we treat as REAL placeholders (vs. web-search citations).
+# Web-search citations are typically multi-word titles like "[FOSDEM 2026 - ...]";
+# real placeholders use specific stand-in words.
+_PLACEHOLDER_WORDS = (
+    r"your |insert |specify |add |name|company|date|project|role|position|"
+    r"link|url|email|phone|title|todo|tbd|x\b|here\b"
+)
 PLACEHOLDER_PATTERNS = [
-    r"\[[^\]\n]{1,80}\]",      # [Your Name], [Specific Project]
-    r"\{[^}\n]{1,80}\}",        # {company}
-    r"\(insert[^)]{1,80}\)",    # (insert details)
+    rf"(?i)\[\s*(?:{_PLACEHOLDER_WORDS})[^\]\n]{{0,80}}\]",
+    r"\{[^}\n]{1,80}\}",
+    r"\(insert[^)]{1,80}\)",
     r"\byour [a-z ]{0,30}here\b",
     r"\bTODO\b",
     r"\bTBD\b",
 ]
+
+
+def _strip_citation_brackets(text: str) -> str:
+    """Drop bracket wrappers around what's obviously a citation/title, keeping
+    the inner text so the prose stays readable. Anything that looks like a
+    real placeholder is left intact so _assert_clean can still fail it."""
+    def replace(m: re.Match) -> str:
+        inside = m.group(1)
+        for pat in PLACEHOLDER_PATTERNS:
+            if re.search(pat, m.group(0)):
+                return m.group(0)  # actual placeholder — keep brackets to fail check
+        # Looks like a citation/title — keep inner text, drop the brackets.
+        return inside
+    return re.sub(r"\[([^\]\n]{1,160})\]", replace, text)
 
 
 def write(cv_text: str, job_title: str, company: str,
@@ -99,6 +123,7 @@ def _generate(user_msg: str, attempts: int = 2) -> str:
             model=cs.MODEL_SMART,
             allowed_tools=["WebSearch"],
         )
+        text = _strip_citation_brackets(text)
         try:
             _assert_clean(text)
             return text

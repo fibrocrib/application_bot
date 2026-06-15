@@ -26,8 +26,10 @@ summary verbatim — it must be ready to render in a PDF.
 ABSOLUTE OUTPUT RULES:
 - Output ONLY the new summary paragraph. No preamble, no "Here is", no
   bullet points, no headings, no quotes around it, no sign-off.
-- NEVER include placeholder text: no [brackets], no {curly braces}, no
-  "(insert ...)", no TODOs, no "your specific X here".
+- NEVER include inline citations, source titles, link text, web-search result
+  titles, or any text in square brackets. Synthesise web findings into prose.
+- NEVER include placeholder text: no [Your Name], no {company}, no
+  "(insert ...)", no TODOs, no "your X here".
 - NEVER ask the user for extra information. You have web_search — use it to
   look up the company, product, or team if you need to.
 - NEVER invent skills, employers, or achievements that aren't in the CV.
@@ -44,14 +46,30 @@ CONTENT RULES:
   the JD."""
 
 
+_PLACEHOLDER_WORDS = (
+    r"your |insert |specify |add |name|company|date|project|role|position|"
+    r"link|url|email|phone|title|todo|tbd|x\b|here\b"
+)
 PLACEHOLDER_PATTERNS = [
-    r"\[[^\]\n]{1,80}\]",
+    rf"(?i)\[\s*(?:{_PLACEHOLDER_WORDS})[^\]\n]{{0,80}}\]",
     r"\{[^}\n]{1,80}\}",
     r"\(insert[^)]{1,80}\)",
     r"\byour [a-z ]{0,30}here\b",
     r"\bTODO\b",
     r"\bTBD\b",
 ]
+
+
+def _strip_citation_brackets(text: str) -> str:
+    """Strip bracket wrappers around obvious citations (multi-word titles),
+    keeping the inner text. Real placeholders survive intact so _assert_clean
+    can still flag them."""
+    def replace(m: re.Match) -> str:
+        for pat in PLACEHOLDER_PATTERNS:
+            if re.search(pat, m.group(0)):
+                return m.group(0)
+        return m.group(1)
+    return re.sub(r"\[([^\]\n]{1,160})\]", replace, text)
 
 
 def tailor(cv_text: str, job_title: str, company: str,
@@ -86,6 +104,7 @@ def _generate(cv_text: str, job_title: str, company: str,
             allowed_tools=["WebSearch"],
         )
         text = _strip_preamble(text)
+        text = _strip_citation_brackets(text)
         try:
             _assert_clean(text)
             return text
