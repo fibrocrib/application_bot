@@ -58,6 +58,10 @@ Your task has two phases:
 
 Rules:
 - Always call `look` first, and again after any navigation or click.
+- If a `look` result starts with `DEAD_PAGE:` (page is a 404, "no openings",
+  "no longer available", "0 jobs found", etc.), immediately call
+  `finish` with status='skipped' and note='role unavailable: <reason>'.
+  Do not try to navigate further — the role is gone.
 - Never invent answers to free-text questions. If a required question can't be
   answered from the profile + statement, call `finish` with status='skipped'.
 - For dropdowns about work authorisation / sponsorship / location, answer
@@ -66,7 +70,11 @@ Rules:
 - If you see a captcha, login wall, or 'create account', call finish status='skipped'.
 - If you see a confirmation page ('thank you', 'application received', 'we got it'),
   call finish status='applied'.
-- Be efficient — don't re-read the same page twice in a row."""
+- Be efficient — don't re-read the same page twice in a row.
+- SUBMIT RULE: once every required field is filled and the only remaining
+  action is to click a submit/apply/send button, your VERY NEXT action MUST
+  be that click — do NOT call `look` again first. In dry-run mode, call
+  `finish` with status='applied' instead of clicking submit."""
 
 
 DRY_RUN_RULE = """
@@ -99,6 +107,12 @@ async def _run(inp: AgentInput) -> AgentOutput:
         except PWTimeout:
             await browser.close()
             return AgentOutput("skipped", "careers page timeout",
+                               inp.careers_url, 0)
+
+        dead = await _detect_dead_page(page)
+        if dead:
+            await browser.close()
+            return AgentOutput("skipped", f"role unavailable: {dead}",
                                inp.careers_url, 0)
 
         state = _State(page=page, inp=inp)
@@ -305,11 +319,55 @@ def _resolve(page: Page, selector: str):
     return page.locator(selector)
 
 
+# Phrases that mean "this page is dead — there's nothing for you to apply to
+# here." Ashby/Greenhouse/Workday all return 200 OK with these in the body
+# when a posting has been pulled, so we have to text-match rather than rely
+# on status codes.
+_DEAD_PAGE_MARKERS = (
+    "page not found",
+    "page you requested was not found",
+    "this job is no longer available",
+    "this position has been filled",
+    "this posting has been closed",
+    "no longer accepting applications",
+    "0 jobs found",
+    "no openings",
+    "no results found",
+    "there are no job openings at this time",
+)
+
+
+async def _detect_dead_page(page: Page) -> str | None:
+    """Return a short reason string if the current page looks like a stale /
+    pulled / 404 role page, else None."""
+    try:
+        body = await page.evaluate(
+            "() => (document.body && document.body.innerText) ? "
+            "document.body.innerText.slice(0, 4000).toLowerCase() : ''"
+        )
+    except Exception:
+        return None
+    for marker in _DEAD_PAGE_MARKERS:
+        if marker in body:
+            return marker
+    return None
+
+
 async def _snapshot(page: Page) -> str:
     try:
         await page.wait_for_load_state("domcontentloaded", timeout=4000)
     except PWTimeout:
         pass
+
+    dead = await _detect_dead_page(page)
+    if dead:
+        return (
+            f"DEAD_PAGE: {dead}\n"
+            f"URL: {page.url}\n"
+            f"Title: {(await page.title())[:120]}\n"
+            "The page indicates the role is unavailable. Call "
+            "finish(status='skipped', note='role unavailable: " + dead + "') now."
+        )
 
     elements = await page.evaluate(
         """() => {

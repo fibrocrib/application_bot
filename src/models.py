@@ -13,6 +13,10 @@ class JobLead:
     description: str
     source: str  # which discovery provider surfaced it
     source_url: str  # where we found it (for logs only, not for applying)
+    # JobSpy's resolved direct-to-employer URL when present. We trust this over
+    # guessing the company's ATS slug — it's the URL the aggregator actually
+    # followed back to the company's own posting.
+    direct_url: str = ""
 
     def dedupe_key(self) -> tuple[str, str]:
         return (self.company.strip().lower(), self.title.strip().lower())

@@ -27,8 +27,20 @@ If you genuinely don't know, return "unknown".
 Respond with strict JSON: {"url": "<url or 'unknown'>"} — no other text."""
 
 
+def resolve(company: str, direct_url: str | None = None) -> str | None:
+    """Pick the best URL for the agent to start on.
+
+    If the aggregator gave us a direct-to-employer URL that resolves, prefer it
+    — that's the exact role page, no Phase A search needed. Otherwise fall back
+    to guessing the company's careers root (cached per-company).
+    """
+    if direct_url and _verify(direct_url):
+        return direct_url
+    return _resolve_company(company)
+
+
 @lru_cache(maxsize=2048)
-def resolve(company: str) -> str | None:
+def _resolve_company(company: str) -> str | None:
     candidates: list[str] = []
 
     guess = _ask_claude(company)
@@ -72,10 +84,29 @@ def _ask_claude(company: str) -> str | None:
         return None
 
 
+_SOFT_404_MARKERS = (
+    "page not found",
+    "page you requested was not found",
+    "this job is no longer available",
+    "this position has been filled",
+    "this posting has been closed",
+    "no longer accepting applications",
+    "0 jobs found",
+    "no openings",
+    "no results found",
+)
+
+
 def _verify(url: str) -> bool:
     try:
         r = requests.get(url, headers={"User-Agent": UA},
                          timeout=10, allow_redirects=True)
-        return 200 <= r.status_code < 400 and len(r.text) > 500
     except requests.RequestException:
         return False
+    if not (200 <= r.status_code < 400) or len(r.text) < 500:
+        return False
+    # Ashby/Greenhouse/Workday all return 200 OK with a "Page not found"
+    # body for stale roles — treat that as a miss so we don't waste 60
+    # browser turns on a dead page.
+    low = r.text.lower()
+    return not any(m in low for m in _SOFT_404_MARKERS)

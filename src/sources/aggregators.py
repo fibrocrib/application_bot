@@ -50,6 +50,13 @@ def search(
         title = str(row.get("title") or "").strip()
         if not company or not title:
             continue
+        direct = str(row.get("job_url_direct") or "").strip()
+        # LinkedIn's job_url_direct is often the same linkedin.com URL — only
+        # trust it if it points off-platform to the company's own ATS.
+        if direct and any(host in direct for host in (
+            "linkedin.com", "indeed.com", "glassdoor.com", "google.com",
+        )):
+            direct = ""
         out.append(JobLead(
             title=title,
             company=company,
@@ -57,5 +64,6 @@ def search(
             description=str(row.get("description") or "").strip(),
             source=str(row.get("site") or "aggregator"),
             source_url=str(row.get("job_url") or ""),
+            direct_url=direct,
         ))
     return out

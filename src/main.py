@@ -140,7 +140,7 @@ def main() -> int:
                  idx, len(passes), lead.company, lead.title,
                  lead.location or "?", verdict.score)
 
-        careers = careers_page.resolve(lead.company)
+        careers = careers_page.resolve(lead.company, direct_url=lead.direct_url or None)
         if not careers:
             log.info("    careers page: SKIP — could not resolve")
             r = ApplicationResult(lead=lead, status="skipped",
@@ -149,7 +149,9 @@ def main() -> int:
             results.append(r)
             _record(seen, lead, r, verdict.score)
             continue
-        log.info("    careers page: %s", careers)
+        used_direct = lead.direct_url and careers == lead.direct_url
+        log.info("    careers page: %s%s", careers,
+                 "  (direct-from-aggregator)" if used_direct else "")
 
         try:
             log.info("    writing personal statement...")
