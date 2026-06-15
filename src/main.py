@@ -105,9 +105,16 @@ def main() -> int:
                      fr.lead.location or "?", verdict)
             filter_results.append(fr)
 
-    passes = [fr for fr in filter_results if fr.passed]
-    log.info("phase 1 done: %d pass / %d skip", len(passes),
-             len(filter_results) - len(passes))
+    # Sort passes by fit score (highest first) so the daily_cap apply budget
+    # gets spent on the strongest matches, not whatever the ThreadPool
+    # happened to finish first.
+    passes = sorted(
+        (fr for fr in filter_results if fr.passed),
+        key=lambda fr: fr.fit_score,
+        reverse=True,
+    )
+    log.info("phase 1 done: %d pass / %d skip (apply order = highest fit first)",
+             len(passes), len(filter_results) - len(passes))
 
     # Record every skip up-front; passes are recorded after the apply attempt.
     for fr in filter_results:

@@ -12,14 +12,18 @@ import time
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from claude_agent_sdk import (ClaudeAgentOptions, ResultMessage,
-                              create_sdk_mcp_server, query, tool)
+from claude_agent_sdk import (AssistantMessage, ClaudeAgentOptions,
+                              ResultMessage, create_sdk_mcp_server, query, tool)
 from playwright.async_api import (Page, TimeoutError as PWTimeout,
                                   async_playwright)
 
 log = logging.getLogger(__name__)
 
-MAX_TURNS = 28
+# Real ATS application forms (Ashby, Greenhouse, Lever, Workday) need ~25-45
+# productive turns including page snapshots between actions. 28 was hitting
+# the cap on even clean Ashby forms; 60 gives real headroom for multi-page
+# Workday-style flows while still bounding cost.
+MAX_TURNS = 60
 SCREENSHOT_DIR = Path("screenshots")
 
 
@@ -121,12 +125,27 @@ async def _run(inp: AgentInput) -> AgentOutput:
 
         try:
             async for msg in query(prompt=_kickoff(inp), options=opts):
+                if isinstance(msg, AssistantMessage):
+                    for block in getattr(msg, "content", []) or []:
+                        name = getattr(block, "name", None)
+                        if name:  # ToolUseBlock
+                            args = getattr(block, "input", {}) or {}
+                            log.debug("    tool %s %s",
+                                      name.split("__")[-1],
+                                      {k: str(v)[:80] for k, v in args.items()})
                 if isinstance(msg, ResultMessage):
                     state.steps_used = getattr(msg, "num_turns", state.steps_used)
         except Exception as e:
             log.warning("agent session error: %s", e)
             if state.final_status == "failed" and state.final_note.startswith("agent did not"):
                 state.final_note = f"session error: {e}"
+            # Capture where the agent got stuck so we have forensics next time.
+            try:
+                shot = SCREENSHOT_DIR / f"sessionerr_{int(time.time())}.png"
+                await page.screenshot(path=str(shot), full_page=True)
+                state.shots.append(str(shot))
+            except Exception:
+                pass
 
         try:
             state.role_url = page.url
