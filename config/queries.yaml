@@ -4,7 +4,7 @@
 cv_path: cv.pdf            # PDF in repo root
 daily_cap: 10              # max applications per run
 fit_threshold: 0.6         # 0..1, below this we skip
-per_query_limit: 40        # lead cap per query per source
+per_query_limit: 15        # lead cap per query per source (was 40 — was causing 362 leads and 90-min timeout)
 dry_run: true              # fill every field but DON'T click submit; flip to false when you trust it
 
 # Where you live now. Used by the relocation evaluator to decide whether
