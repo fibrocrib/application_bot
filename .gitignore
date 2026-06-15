@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.DS_Store
+screenshots/
+statements/
+*.log
+
+# Personal data — never commit. Materialised from secrets in CI.
+cv_content.py
+config/profile.yaml
+CV.docx
+cv.pdf

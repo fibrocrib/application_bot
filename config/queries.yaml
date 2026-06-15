@@ -1,0 +1,98 @@
+# Edit this file to control what the bot applies to. Commit and the next
+# scheduled run picks up the changes.
+
+cv_path: cv.pdf            # PDF in repo root
+daily_cap: 10              # max applications per run
+fit_threshold: 0.6         # 0..1, below this we skip
+per_query_limit: 40        # lead cap per query per source
+dry_run: true              # fill every field but DON'T click submit; flip to false when you trust it
+
+# Where you live now. Used by the relocation evaluator to decide whether
+# a non-local role is worth applying to.
+base_location: "London, UK"
+
+# Current salary floor. Roles that publish a max salary below this are
+# skipped without a Claude call. Roles with no posted salary are kept
+# (most UK roles don't publish; matcher decides).
+salary_floor_gbp: 40000
+
+# Private sector — JobSpy aggregators (LinkedIn / Indeed / Glassdoor / Google).
+queries:
+  - term: "software engineer"
+    location: "United Kingdom"
+    country: uk
+
+  # ML / research — MPhil DIS + neural-nets-from-scratch + symbolic regression research.
+  - term: "machine learning engineer"
+    location: "United Kingdom"
+    country: uk
+
+  - term: "research engineer"
+    location: "United Kingdom"
+    country: uk
+
+  - term: "ai engineer"
+    location: "United Kingdom"
+    country: uk
+
+  - term: "data scientist"
+    location: "Remote, UK"
+    country: uk
+
+  # Quant — Cambridge physics → finance is the classic pipeline.
+  - term: "quantitative researcher"
+    location: "United Kingdom"
+    country: uk
+
+  - term: "quantitative developer"
+    location: "United Kingdom"
+    country: uk
+
+  # Forward-deployed / deployment — matches current Seal role.
+  - term: "forward deployed engineer"
+    location: "United Kingdom"
+    country: uk
+
+  - term: "deployment engineer"
+    location: "United Kingdom"
+    country: uk
+
+  # C++ / systems — DirectX 11 graphics engine + low-level work.
+  - term: "c++ software engineer"
+    location: "United Kingdom"
+    country: uk
+
+  - term: "graphics engineer"
+    location: "Remote, UK"
+    country: uk
+
+# Government sources are disabled for now — their search pages are bespoke
+# scrapes that need tuning against the live HTML before they're reliable.
+# Re-enable by uncommenting the lists below; the discover.py and source
+# modules (src/sources/gov_uk.py, src/sources/gov_eu.py) stay in place.
+
+# gov_uk_queries:
+#   # UK Civil Service DDaT (Digital, Data and Technology) job family.
+#   # Civil Service uses "Developer" not "Engineer"; grades are HEO/SEO/G7/G6.
+#   - term: "software developer"
+#   - term: "senior software developer"
+#   - term: "lead developer"
+#   - term: "data scientist"
+#   - term: "data engineer"
+#   - term: "machine learning"
+#   - term: "technical architect"
+#   - term: "DDaT"                # catches roles tagged with the job family
+#   - term: "Fast Stream digital" # graduate scheme
+
+# gov_eu_queries:
+#   # EU institutions / EPSO vocab. EU advertises by grade (AD/AST/CAST) and
+#   # uses different titles — "Administrator" is the graduate/professional grade.
+#   - term: "ICT specialist"
+#   - term: "data scientist"
+#   - term: "AI specialist"
+#   - term: "administrator digital"
+#   - term: "contract agent ICT"
+
+# Profile data lives in config/profile.yaml (gitignored).
+# Copy config/profile.example.yaml → config/profile.yaml to set yours.
+profile_path: "config/profile.yaml"

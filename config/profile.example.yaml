@@ -1,0 +1,28 @@
+# Schema for config/profile.yaml. Copy to profile.yaml and fill in.
+# Real profile.yaml is gitignored — in CI it comes from the PROFILE_B64 secret.
+#
+# To generate the secret value:
+#   base64 -i config/profile.yaml | pbcopy      # macOS
+#   base64 -w0 config/profile.yaml | xclip      # Linux
+# Then paste into a repo secret named PROFILE_B64.
+#
+# These values are filled into application forms verbatim by the agent.
+# Add or remove fields as needed — Claude picks the relevant ones per form.
+
+full_name: "Your Name"
+first_name: "Your"
+last_name: "Name"
+email: "you@example.com"
+phone: "+44 7XXX XXXXXX"
+linkedin: ""
+github: ""
+website: ""
+current_location: "London, UK"
+willing_to_relocate: "Yes"
+work_authorisation_uk: "Yes"
+needs_visa_sponsorship: "No"
+salary_expectation: "Competitive"
+notice_period: "1 month"
+earliest_start: "Immediately"
+pronouns: "Prefer not to say"
+how_did_you_hear: "Google search"
