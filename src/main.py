@@ -221,7 +221,8 @@ def _record(seen: dict, lead, r: ApplicationResult, fit: float) -> None:
     seen[key] = state.Record(
         key=key, company=lead.company, role=lead.title,
         status=r.status, reason=r.reason, role_url=r.role_url,
-        fit_score=fit, timestamp=dt.datetime.utcnow().isoformat(timespec="seconds") + "Z",
+        fit_score=fit,
+        timestamp=dt.datetime.now(dt.UTC).isoformat(timespec="seconds").replace("+00:00", "Z"),
     )
 
 
