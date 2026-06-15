@@ -1,4 +1,4 @@
-"""Score how well a job fits the CV using Claude."""
+"""Score how well a job fits the CV using Claude (via `claude -p`)."""
 
 from __future__ import annotations
 
@@ -7,7 +7,7 @@ import logging
 import re
 from dataclasses import dataclass
 
-from .claude_client import MODEL_FAST, client
+from . import claude_subprocess as cs
 
 log = logging.getLogger(__name__)
 
@@ -29,20 +29,18 @@ Respond with strict JSON, no other text:
 
 def score(cv_text: str, job_title: str, job_description: str,
           location: str = "", threshold: float = 0.6) -> FitVerdict:
-    user = (
+    prompt = (
         f"=== CV ===\n{cv_text}\n\n"
         f"=== JOB ===\n"
         f"Title: {job_title}\n"
         f"Location: {location}\n\n"
         f"Description:\n{job_description}\n"
     )
-    resp = client().messages.create(
-        model=MODEL_FAST,
-        max_tokens=300,
-        system=SYSTEM,
-        messages=[{"role": "user", "content": user}],
-    )
-    text = resp.content[0].text.strip()
+    try:
+        text = cs.complete(prompt, system=SYSTEM, model=cs.MODEL_FAST)
+    except Exception as e:
+        log.warning("matcher claude call failed: %s", e)
+        return FitVerdict(0.0, f"claude error: {e}", False)
     try:
         data = json.loads(_extract_json(text))
         s = float(data["score"])

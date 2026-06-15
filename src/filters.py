@@ -14,7 +14,7 @@ import logging
 import re
 from dataclasses import dataclass
 
-from .claude_client import MODEL_FAST, client
+from . import claude_subprocess as cs
 
 log = logging.getLogger(__name__)
 
@@ -119,13 +119,12 @@ def location_ok(
         f"Description:\n{jd_text[:6000]}\n"
     )
     try:
-        resp = client().messages.create(
-            model=MODEL_FAST,
-            max_tokens=200,
-            system=_LOC_SYSTEM,
-            messages=[{"role": "user", "content": user}],
-        )
-        text = resp.content[0].text.strip()
+        text = cs.complete(user, system=_LOC_SYSTEM, model=cs.MODEL_FAST)
+    except Exception as e:
+        log.warning("location_ok call failed for %s/%s: %s", company, job_title, e)
+        # Conservative default on error: skip rather than apply blind.
+        return LocationVerdict(False, f"evaluator error: {e}")
+    try:
         m = re.search(r"\{.*\}", text, re.S)
         data = json.loads(m.group(0)) if m else {}
         return LocationVerdict(
@@ -133,6 +132,5 @@ def location_ok(
             reason=str(data.get("reason", "")).strip() or "n/a",
         )
     except Exception as e:
-        log.warning("location_ok call failed for %s/%s: %s", company, job_title, e)
-        # Conservative default on error: skip rather than apply blind.
-        return LocationVerdict(False, f"evaluator error: {e}")
+        log.warning("location_ok parse failed: %s — %r", e, text[:200])
+        return LocationVerdict(False, "parse error")

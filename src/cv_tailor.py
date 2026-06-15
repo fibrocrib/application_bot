@@ -14,7 +14,7 @@ from pathlib import Path
 
 import build_cv  # at project root; importable when run from there
 
-from .claude_client import MODEL_SMART, client
+from . import claude_subprocess as cs
 
 log = logging.getLogger(__name__)
 
@@ -79,20 +79,13 @@ def _generate(cv_text: str, job_title: str, company: str,
     )
     last_err: Exception | None = None
     for _ in range(attempts):
-        resp = client().messages.create(
-            model=MODEL_SMART,
-            max_tokens=900,
+        text = cs.complete(
+            user,
             system=SYSTEM,
-            tools=[{
-                "type": "web_search_20250305",
-                "name": "web_search",
-                "max_uses": 3,
-            }],
-            messages=[{"role": "user", "content": user}],
+            model=cs.MODEL_SMART,
+            allowed_tools=["WebSearch"],
         )
-        text_parts = [b.text for b in resp.content
-                      if getattr(b, "type", None) == "text" and getattr(b, "text", None)]
-        text = _strip_preamble("\n".join(text_parts).strip())
+        text = _strip_preamble(text)
         try:
             _assert_clean(text)
             return text

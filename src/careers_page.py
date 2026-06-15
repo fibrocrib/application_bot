@@ -9,7 +9,7 @@ from functools import lru_cache
 
 import requests
 
-from .claude_client import MODEL_FAST, client
+from . import claude_subprocess as cs
 
 log = logging.getLogger(__name__)
 
@@ -29,7 +29,6 @@ Respond with strict JSON: {"url": "<url or 'unknown'>"} — no other text."""
 
 @lru_cache(maxsize=2048)
 def resolve(company: str) -> str | None:
-    """Return a careers URL we could verify, or None."""
     candidates: list[str] = []
 
     guess = _ask_claude(company)
@@ -59,20 +58,17 @@ def resolve(company: str) -> str | None:
 
 def _ask_claude(company: str) -> str | None:
     try:
-        resp = client().messages.create(
-            model=MODEL_FAST,
-            max_tokens=200,
-            system=SYSTEM,
-            messages=[{"role": "user", "content": f"Company: {company}"}],
-        )
-        text = resp.content[0].text.strip()
-        m = re.search(r"\{.*\}", text, re.S)
-        if not m:
-            return None
-        url = (json.loads(m.group(0)).get("url") or "").strip()
-        return url or None
+        text = cs.complete(f"Company: {company}", system=SYSTEM, model=cs.MODEL_FAST)
     except Exception as e:
-        log.warning("claude careers resolve failed for %r: %s", company, e)
+        log.warning("careers_page claude call failed for %r: %s", company, e)
+        return None
+    m = re.search(r"\{.*\}", text, re.S)
+    if not m:
+        return None
+    try:
+        return (json.loads(m.group(0)).get("url") or "").strip() or None
+    except Exception as e:
+        log.warning("careers_page parse failed for %r: %s", company, e)
         return None
 
 

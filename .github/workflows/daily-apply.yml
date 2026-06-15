@@ -27,11 +27,9 @@ jobs:
     timeout-minutes: 90
 
     env:
-      # Max-plan OAuth token (preferred). Generate locally with `claude setup-token`,
-      # then store as a repo secret. Bills against your Max subscription.
-      # ANTHROPIC_API_KEY is an optional fallback for pay-as-you-go callers.
+      # Max-plan OAuth token from `claude setup-token`. The Claude Code CLI
+      # and the claude-agent-sdk subprocess both read this from env.
       CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       # Brevo SMTP relay — set these as repo secrets.
       # SMTP_USER = your Brevo login email (must be a verified sender)
       # SMTP_PASS = SMTP key from Brevo dashboard → SMTP & API → SMTP
@@ -50,6 +48,13 @@ jobs:
         with:
           python-version: '3.12'
           cache: pip
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
 
       - name: Install dependencies
         run: |

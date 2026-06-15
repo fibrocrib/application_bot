@@ -1,4 +1,4 @@
-anthropic>=0.40.0
+claude-agent-sdk>=0.1.0
 playwright>=1.48.0
 pdfplumber>=0.11.0
 python-jobspy>=1.1.70
