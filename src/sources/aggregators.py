@@ -13,7 +13,11 @@ from ..models import JobLead
 
 log = logging.getLogger(__name__)
 
-DEFAULT_SITES = ["linkedin", "indeed", "glassdoor", "google"]
+# Glassdoor's connector rejects country-level locations like "United Kingdom"
+# (HTTP 400 "location not parsed"). It needs numeric IDs or specific city
+# strings — not worth the maintenance burden given LinkedIn + Indeed already
+# cover its listings. Add it back per-query via `sites:` if you want it.
+DEFAULT_SITES = ["linkedin", "indeed", "google"]
 
 
 def search(
