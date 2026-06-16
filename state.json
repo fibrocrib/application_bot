@@ -1,0 +1,2392 @@
+{
+  "aarun software limited::web designer and developer": {
+    "company": "AARUN SOFTWARE LIMITED",
+    "fit_score": 0.25,
+    "key": "aarun software limited::web designer and developer",
+    "reason": "fit 0.25: Missing critical front-end skills (JavaScript, HTML/CSS, React/Angular) and no web design experience; background is ML/scientific computing, not web development\u2014geographic fit is good (London to Amersham) but skill match is poor.",
+    "role": "Web Designer and Developer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "acorns children's hospice::senior ict systems & network administrator": {
+    "company": "ACORNS CHILDREN'S HOSPICE",
+    "fit_score": 0.02,
+    "key": "acorns children's hospice::senior ict systems & network administrator",
+    "reason": "fit 0.02: Dario is a software engineer with zero infrastructure/systems administration experience, lacks all required certifications (CCNA, AZ-104, AZ-500), has no Azure/M365/network administration expertise, and no service desk background\u2014this senior infrastructure role is entirely misaligned with his skillset and career trajectory.",
+    "role": "Senior ICT Systems & Network Administrator",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "acquire me::machine learning engineer": {
+    "company": "Acquire Me",
+    "fit_score": 0.2,
+    "key": "acquire me::machine learning engineer",
+    "reason": "fit 0.20: Critical seniority mismatch: role requires 4+ years production experience and senior-level infrastructure expertise, but candidate has ~2 months professional software experience and no demonstrated knowledge of Kubernetes, containers, or cloud-native systems\u2014essential for this senior MLOps position at a major investment manager.",
+    "role": "Machine Learning Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "adria solutions ltd::ai implementation engineer": {
+    "company": "Adria Solutions Ltd",
+    "fit_score": 0.48,
+    "key": "adria solutions ltd::ai implementation engineer",
+    "reason": "fit 0.48: Strong Python/AI fundamentals and startup production experience, but lacks essential RAG pipeline expertise, enterprise cloud platform (Azure) experience, VNet/Entra ID infrastructure knowledge, and enterprise-scale AI operationalisation; also requires relocation from London to Manchester.",
+    "role": "AI Implementation Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "adria solutions ltd::artificial intelligence engineer": {
+    "company": "Adria Solutions Ltd",
+    "fit_score": 0.72,
+    "key": "adria solutions ltd::artificial intelligence engineer",
+    "reason": "relocation not worth it: No salary premium disclosed, Adria Solutions Ltd is not notably prestigious, and equivalent AI roles are readily available in London without relocation.",
+    "role": "Artificial Intelligence Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "advanced resource managers::graduate software engineer": {
+    "company": "Advanced Resource Managers",
+    "fit_score": 0.8,
+    "key": "advanced resource managers::graduate software engineer",
+    "reason": "relocation not worth it: Relocation required to Guildford without material salary premium or exceptional prestige to justify leaving London's equivalent tech market.",
+    "role": "Graduate Software Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "aecom::sustainability consultant": {
+    "company": "AECOM",
+    "fit_score": 0.15,
+    "key": "aecom::sustainability consultant",
+    "reason": "fit 0.15: Strong scientific foundation, but lacks required climate risk expertise, sustainability consulting experience, and domain knowledge in infrastructure resilience\u2014this is a consulting career pivot without demonstrated interest or background in climate/sustainability.",
+    "role": "Sustainability Consultant",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "afry::analyst - nature based solutions": {
+    "company": "AFRY",
+    "fit_score": 0.2,
+    "key": "afry::analyst - nature based solutions",
+    "reason": "fit 0.20: Strong analytical skills and Python expertise are mismatched by complete lack of forestry, agriculture, carbon markets, or environmental consulting domain knowledge; Dario's background is pure software engineering, and CV shows no passion or experience in nature-based solutions or carbon integrity principles that the role explicitly seeks.",
+    "role": "Analyst - Nature based Solutions",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "algo capital group::engineer - endpoint": {
+    "company": "Algo Capital Group",
+    "fit_score": 0.08,
+    "key": "algo capital group::engineer - endpoint",
+    "reason": "fit 0.08: Candidate is a software engineer with strong fundamentals but lacks the required enterprise IT systems expertise (Microsoft Intune, Autopilot, Entra ID, software packaging platforms, macOS/AD management) for this specialized endpoint infrastructure role; domain mismatch is fundamental, not skill-bridgeable in a 12-month trading-firm contract.",
+    "role": "Engineer - Endpoint",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "allstate insurance::managing engineer - cyber platform engineering (hybrid) -": {
+    "company": "Allstate Insurance",
+    "fit_score": 0.05,
+    "key": "allstate insurance::managing engineer - cyber platform engineering (hybrid) -",
+    "reason": "fit 0.05: Severe seniority mismatch: role requires 5+ years software engineering and 3+ years team leadership experience with supervisory responsibilities, but candidate is a recent graduate (<2 years professional software engineering experience) with zero team management background; additionally, no cyber security or platform engineering domain experience.",
+    "role": "Managing Engineer - Cyber Platform Engineering (Hybrid) -",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "amazon web services (aws)::site reliability engineer, region services": {
+    "company": "Amazon Web Services (AWS)",
+    "fit_score": 0.4,
+    "key": "amazon web services (aws)::site reliability engineer, region services",
+    "reason": "fit 0.40: Strong fundamentals and production experience, but lacks the infrastructure/DevOps background this SRE role requires\u2014no Ansible, PowerShell, CI/CD, or Windows services experience, with background primarily in ML/data engineering rather than systems infrastructure.",
+    "role": "Site Reliability Engineer, Region Services",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "amazon.com::senior software development engineer, cloudfront control plane, cloudfront": {
+    "company": "Amazon.com",
+    "fit_score": 0.15,
+    "key": "amazon.com::senior software development engineer, cloudfront control plane, cloudfront",
+    "reason": "fit 0.15: Severe seniority mismatch: role requires senior-level leadership and mentoring experience; candidate has only 2 months of professional deployment engineering experience post-graduation and lacks demonstrated track record leading teams at scale.",
+    "role": "Senior Software Development Engineer, CloudFront Control Plane, CloudFront",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "amazon.com::software development engineer, amazon ads creativex": {
+    "company": "Amazon.com",
+    "fit_score": 0.42,
+    "key": "amazon.com::software development engineer, amazon ads creativex",
+    "reason": "fit 0.42: Strong ML expertise aligns with role requirements, but missing required React/TypeScript/Kotlin tech stack is a significant gap for this full-stack SDE position.",
+    "role": "Software Development Engineer, Amazon Ads CreativeX",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "amazon.com::software development engineer, web & emerging modalities, prime video": {
+    "company": "Amazon.com",
+    "fit_score": 0.35,
+    "key": "amazon.com::software development engineer, web & emerging modalities, prime video",
+    "reason": "fit 0.35: Strong fundamentals and professional experience, but significant gaps in required web technologies (TypeScript, JavaScript, Java, Sass, AWS/CDK) and no background in web platform development\u2014experience is primarily in scientific computing, graphics engines, and trading systems rather than consumer-facing web applications.",
+    "role": "Software Development Engineer, Web & Emerging Modalities, Prime Video",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "american bureau of shipping (abs)::civil engineer": {
+    "company": "American Bureau of Shipping (ABS)",
+    "fit_score": 0.08,
+    "key": "american bureau of shipping (abs)::civil engineer",
+    "reason": "fit 0.08: Fundamental domain mismatch: Dario is a software engineer with physics and data science training, not a civil/maritime engineer; lacks the required engineering degree (Civil, Structural, Naval, or Ocean Engineering), zero relevant experience in shipyards/design offices/maritime companies, and no demonstrated engineering software literacy (CAD, FEM tools)\u2014this role requires domain-specific credentials he doesn't possess.",
+    "role": "Civil Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "anson mccade::ai/ml researcher": {
+    "company": "Anson McCade",
+    "fit_score": 0.25,
+    "key": "anson mccade::ai/ml researcher",
+    "reason": "fit 0.25: Candidate lacks the required PhD (only has MPhil), is a recent graduate with insufficient research/commercial AI experience, and lacks Graph ML/Knowledge Graph expertise; better suited to junior ML engineer or graduate research roles.",
+    "role": "AI/ML Researcher",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "anson mccade::quantitative developer": {
+    "company": "Anson McCade",
+    "fit_score": 0.22,
+    "key": "anson mccade::quantitative developer",
+    "reason": "fit 0.22: Seniority mismatch: role explicitly requires professional experience developing live execution systems at top-tier quant firms, but candidate has only 2 months of professional engineering experience (though strong ML fundamentals and impressive self-built trading bot suggest future potential).",
+    "role": "Quantitative developer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "anson mccade::site reliability engineer - hybrid - gloucester": {
+    "company": "Anson McCade",
+    "fit_score": 0.6,
+    "key": "anson mccade::site reliability engineer - hybrid - gloucester",
+    "reason": "relocation not worth it: Requires Gloucester relocation without clear salary premium (market-rate \u00a340-65k range) or prestige advantage to justify uprooting.",
+    "role": "Site Reliability Engineer - Hybrid - Gloucester",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "apollo solutions::front office quantitative analyst": {
+    "company": "Apollo Solutions",
+    "fit_score": 0.32,
+    "key": "apollo solutions::front office quantitative analyst",
+    "reason": "fit 0.32: Seniority-mismatched: candidate has only 2 months professional experience post-graduation for a mid-level front-office role, and lacks the required financial domain knowledge (derivatives, financing products, FX hedging) despite strong technical Python/stats fundamentals and relevant Cambridge MPhil education.",
+    "role": "Front Office Quantitative Analyst",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "apple::software engineer (distributed systems, java)": {
+    "company": "Apple",
+    "fit_score": 0.2,
+    "key": "apple::software engineer (distributed systems, java)",
+    "reason": "fit 0.20: Java is listed as a minimum requirement but is completely absent from the CV; while Dario has strong fundamentals and data pipeline experience, he lacks the proven Java and large-scale distributed systems expertise (Kafka, Hadoop, HDFS, key-value stores) essential for this Apple Services role.",
+    "role": "Software Engineer (Distributed Systems, Java)",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "applied data science partners::lead software engineer": {
+    "company": "Applied Data Science Partners",
+    "fit_score": 0.15,
+    "key": "applied data science partners::lead software engineer",
+    "reason": "fit 0.15: Strong technical foundation but fundamental seniority mismatch: role requires team leadership and project management at senior level; candidate is junior with 2 months professional experience and no leadership background.",
+    "role": "Lead Software Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "aria::technical and translational lead - safeguarded ai (cybersecurity)": {
+    "company": "Aria",
+    "fit_score": 0.12,
+    "key": "aria::technical and translational lead - safeguarded ai (cybersecurity)",
+    "reason": "fit 0.12: Severe seniority mismatch: junior engineer with 2 months professional experience applying for a technical leadership role managing \u00a320m and coordinating teams; additionally lacks the core domain expertise in cybersecurity, formal methods, systems security, and translational/deployment experience that are central to this position.",
+    "role": "Technical and Translational Lead - Safeguarded AI (Cybersecurity)",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "arm::graphics performance engineer": {
+    "company": "Arm",
+    "fit_score": 0.4,
+    "key": "arm::graphics performance engineer",
+    "reason": "fit 0.40: Strong C++ and graphics fundamentals from DirectX 11 engine work, but lacks required Vulkan expertise (has similar-but-different API experience), no profiling tools background, early-career for a mid-level role with mentoring responsibilities, and London-based with no relocation package available for Manchester position.",
+    "role": "Graphics Performance Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "arrows::machine learning engineer": {
+    "company": "Arrows",
+    "fit_score": 0.25,
+    "key": "arrows::machine learning engineer",
+    "reason": "fit 0.25: Seniority mismatch (junior candidate with 2.5 months current experience for a Senior role) plus significant gaps in required production ML infrastructure\u2014no Kubeflow/TFX, model serving (Triton/TorchServe), recommendation-systems, or real-time streaming experience.",
+    "role": "Machine Learning Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "arup::junior materials specialist": {
+    "company": "Arup",
+    "fit_score": 0.18,
+    "key": "arup::junior materials specialist",
+    "reason": "fit 0.18: Candidate has Physics and Data Science degrees, not the required Materials Science or Engineering (Mechanical/Structural/Civil) background; lacks demonstrated experience in materials specification, durability assessment, manufacturing, or fabrication that the role explicitly requires.",
+    "role": "Junior Materials Specialist",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "atarus::software engineer - c++": {
+    "company": "Atarus",
+    "fit_score": 0.22,
+    "key": "atarus::software engineer - c++",
+    "reason": "fit 0.22: Significant seniority mismatch: role requires 3+ years of production C++/Python but candidate has ~2 months current production experience; also lacks required profiling tools (gdb, Valgrind, Nsight) and explicit Docker/CI/CD experience, though he does have strong C++ fundamentals from personal projects and relevant ML skills.",
+    "role": "Software Engineer - C++",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "atkinsr\u00e9alis::senior civil structural engineer": {
+    "company": "AtkinsR\u00e9alis",
+    "fit_score": 0.02,
+    "key": "atkinsr\u00e9alis::senior civil structural engineer",
+    "reason": "fit 0.02: This is a Senior Civil/Structural Engineer role requiring chartered status (IStructE/ICE), FEA expertise, and structural design experience in regulated sectors; the candidate is a software engineer with a physics background and no civil engineering education, structural design experience, or relevant industry background.",
+    "role": "Senior Civil Structural Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "atos::azure devops engineer": {
+    "company": "Atos",
+    "fit_score": 0.2,
+    "key": "atos::azure devops engineer",
+    "reason": "fit 0.20: Severe seniority mismatch: role requires 3+ years of enterprise/public sector cloud/DevOps experience, candidate has ~2 months as deployment engineer at early-stage startup with no Azure, Kubernetes, Docker, CI/CD, or enterprise infrastructure experience.",
+    "role": "Azure DevOps Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "atos::azure technical engineer": {
+    "company": "Atos",
+    "fit_score": 0.2,
+    "key": "atos::azure technical engineer",
+    "reason": "fit 0.20: Strong fundamentals and communication skills, but lacks essential infrastructure engineering expertise: no Azure, Terraform, Ansible, or cloud infrastructure/server administration experience that the role explicitly requires.",
+    "role": "Azure Technical Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "atos::lead full stack engineer - public sector": {
+    "company": "Atos",
+    "fit_score": 0.05,
+    "key": "atos::lead full stack engineer - public sector",
+    "reason": "fit 0.05: Massive seniority mismatch: Lead role requires team mentoring and senior experience, but candidate has only ~2 months of professional engineering experience; additionally, candidate's strengths (Python, C++, ML) don't align with required tech stack (TypeScript, React, Kotlin, Spring Boot, AWS, Terraform).",
+    "role": "Lead Full Stack Engineer - Public Sector",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "azteq group::level 2 it engineer": {
+    "company": "AzteQ Group",
+    "fit_score": 0.08,
+    "key": "azteq group::level 2 it engineer",
+    "reason": "fit 0.08: Severe seniority and role mismatch: candidate is an overqualified software engineer with MPhil seeking engineering roles, not a Level 2 IT support position lacking the required service desk/MSP experience and misaligned with stated career goals.",
+    "role": "Level 2 IT Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "bae systems::operational cyber engineer \u2013 manchester \u2013 national security west": {
+    "company": "BAE Systems",
+    "fit_score": 0.86,
+    "key": "bae systems::operational cyber engineer \u2013 manchester \u2013 national security west",
+    "reason": "relocation not worth it: No salary disclosed to verify \u00a310k premium, and BAE Systems has London offices offering equivalent early-career cyber roles.",
+    "role": "Operational Cyber Engineer \u2013 Manchester \u2013 National Security West",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "bae systems::senior software engineer": {
+    "company": "BAE Systems",
+    "fit_score": 0.2,
+    "key": "bae systems::senior software engineer",
+    "reason": "fit 0.20: Significant seniority mismatch: candidate is 2 months into first professional role (deployment engineer) but role requires 'Senior Software Engineer' experience; also missing demonstrated experience in configuration management, networking concepts, and full SDLC methodologies explicitly listed as essential.",
+    "role": "Senior Software Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "bae systems::software engineer": {
+    "company": "BAE Systems",
+    "fit_score": 0.58,
+    "key": "bae systems::software engineer",
+    "reason": "fit 0.58: Strong C++ and systems programming expertise match the role, but recent graduate status (4 months professional experience) falls significantly short of the 'experienced professionals' target, and Italian nationality may create complications with defence industry security vetting requirements.",
+    "role": "Software Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "barclays::quant analyst": {
+    "company": "Barclays",
+    "fit_score": 0.38,
+    "key": "barclays::quant analyst",
+    "reason": "fit 0.38: Seniority mismatch: strong ML and Python fundamentals, but recent graduate with only ~2.5 months professional experience lacks the 2-3+ years production background and team leadership experience required for this mid-level Barclays analyst role.",
+    "role": "Quant Analyst",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "bazaarvoice::staff application security engineer": {
+    "company": "Bazaarvoice",
+    "fit_score": 0.08,
+    "key": "bazaarvoice::staff application security engineer",
+    "reason": "fit 0.08: Staff-level security role requires 10+ years of application security expertise and proven mentorship track record; candidate has 4 months of deployment engineering experience with zero background in AppSec, threat modeling, OWASP, or secrets management.",
+    "role": "Staff Application Security Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "bgb group::ai software engineer": {
+    "company": "BGB Group",
+    "fit_score": 0.3,
+    "key": "bgb group::ai software engineer",
+    "reason": "fit 0.30: Severe seniority mismatch: candidate has ~2 years of professional experience but role requires 5+ years in enterprise software engineering; while technical AI skills and production experience are genuine strengths, the experience gap is a critical blocker for an agency consulting role requiring stakeholder management and complex system integration.",
+    "role": "AI Software Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "biorelate::forward deployed engineer": {
+    "company": "Biorelate",
+    "fit_score": 0.58,
+    "key": "biorelate::forward deployed engineer",
+    "reason": "fit 0.58: Strong ML fundamentals and current production deployment experience, but lacks depth in required tools (Neo4j, dbt, orchestration, cloud warehouses) and proven production NLP/RAG systems; only 2 months into first role for a mid-level customer-integration lead position.",
+    "role": "Forward Deployed Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "blackpool teaching hospitals nhs foundation trust::research practitioner": {
+    "company": "Blackpool Teaching Hospitals NHS Foundation Trust",
+    "fit_score": 0.12,
+    "key": "blackpool teaching hospitals nhs foundation trust::research practitioner",
+    "reason": "fit 0.12: Software engineer background mismatches clinical trial practitioner role requiring healthcare/GCP knowledge, patient recruitment, and perinatal mental health experience; significant geographic relocation from London to Blackpool required.",
+    "role": "Research Practitioner",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "bolt6::operations engineer - uk": {
+    "company": "BOLT6",
+    "fit_score": 0.0,
+    "key": "bolt6::operations engineer - uk",
+    "reason": "salary: max \u00a332,000 below floor \u00a340,000",
+    "role": "Operations Engineer - UK",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "boxed energy::bms controls engineer": {
+    "company": "Boxed Energy",
+    "fit_score": 0.08,
+    "key": "boxed energy::bms controls engineer",
+    "reason": "fit 0.08: Severe seniority and domain mismatch: role requires 5+ years BMS engineering experience with specific platforms (EasyIO, Tridium Niagara, Trend), but candidate has <1 year professional experience in software/ML engineering with no building automation background.",
+    "role": "BMS Controls Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "boxxe::infrastructure engineer": {
+    "company": "boxxe",
+    "fit_score": 0.05,
+    "key": "boxxe::infrastructure engineer",
+    "reason": "fit 0.05: Enterprise infrastructure sysadmin role requiring specific Windows Server, VMware, and identity management expertise; Dario's background is software engineering and ML, not systems administration.",
+    "role": "Infrastructure Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "bp::lead solution architect": {
+    "company": "bp",
+    "fit_score": 0.03,
+    "key": "bp::lead solution architect",
+    "reason": "fit 0.03: Severe seniority mismatch: this senior lead architect role requires extensive enterprise-scale AWS platform design, governance, and strategic leadership experience, but the candidate is a recent graduate with only 2 months of startup contractor work and no AWS, cloud architecture, or enterprise platform engineering background.",
+    "role": "Lead solution architect",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "bp::staff software engineer": {
+    "company": "bp",
+    "fit_score": 0.1,
+    "key": "bp::staff software engineer",
+    "reason": "fit 0.10: Severe seniority mismatch: candidate has ~2.5 months post-master's professional experience with zero people leadership, while Staff Engineer role requires 10-15+ years and proven experience leading distributed engineering teams; also lacks AWS, Kubernetes, and commercial pricing platform expertise.",
+    "role": "Staff Software Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "braze::forward-deployed data scientist ii": {
+    "company": "Braze",
+    "fit_score": 0.2,
+    "key": "braze::forward-deployed data scientist ii",
+    "reason": "fit 0.20: Strong educational foundation and ML fundamentals, but massive seniority mismatch: role requires 3-5+ years as a Data Scientist/ML Engineer; candidate has ~2 months in a deployment engineer role plus recent graduation, making this unsuitable for a mid-senior 'II' level position requiring customer-facing ML leadership.",
+    "role": "Forward-Deployed Data Scientist II",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "brigg scientific ltd::graduate development scientist": {
+    "company": "Brigg Scientific Ltd",
+    "fit_score": 0.08,
+    "key": "brigg scientific ltd::graduate development scientist",
+    "reason": "fit 0.08: Candidate's Physics/ML/computational background lacks the essential biochemistry, molecular biology, PCR, and wet-lab instrumentation expertise the role explicitly requires; educational mismatch (Physics vs Chemistry/Biochemistry) and no relevant domain experience in medical devices or life sciences.",
+    "role": "Graduate Development Scientist",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "brighton & hove city council::access officer": {
+    "company": "Brighton & Hove City Council",
+    "fit_score": 0.0,
+    "key": "brighton & hove city council::access officer",
+    "reason": "salary: max \u00a331,022 below floor \u00a340,000",
+    "role": "Access Officer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "brighton & hove city council::administrative assistant": {
+    "company": "Brighton & Hove City Council",
+    "fit_score": 0.0,
+    "key": "brighton & hove city council::administrative assistant",
+    "reason": "salary: max \u00a327,694 below floor \u00a340,000",
+    "role": "Administrative Assistant",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "brighton & hove city council::enforcement and investigations officer": {
+    "company": "Brighton & Hove City Council",
+    "fit_score": 0.0,
+    "key": "brighton & hove city council::enforcement and investigations officer",
+    "reason": "salary: max \u00a331,022 below floor \u00a340,000",
+    "role": "Enforcement and Investigations Officer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "capgemini::.net full stack engineer - consultant/senior consultant - digital excellence": {
+    "company": "Capgemini",
+    "fit_score": 0.2,
+    "key": "capgemini::.net full stack engineer - consultant/senior consultant - digital excellence",
+    "reason": "fit 0.20: Early-career engineer with no professional ASP.NET Core, cloud, or front-end framework experience applying for Consultant/Senior Consultant role; seniority and core tech stack gaps are disqualifying.",
+    "role": ".Net Full Stack Engineer - Consultant/Senior Consultant - Digital Excellence",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "capgemini::devops engineer": {
+    "company": "Capgemini",
+    "fit_score": 0.38,
+    "key": "capgemini::devops engineer",
+    "reason": "fit 0.38: Location and recent deployment engineering experience are strong fits, but Dario lacks hands-on experience with the core DevOps stack (Terraform, Ansible, Kubernetes, AWS/Azure/GCP) that the role explicitly requires, and security clearance eligibility is unclear given the CV doesn't confirm 5+ years continuous UK residency.",
+    "role": "DevOps Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "capgemini::guidewire policycenter - configuration developer (london markets / lloyd's)": {
+    "company": "Capgemini",
+    "fit_score": 0.08,
+    "key": "capgemini::guidewire policycenter - configuration developer (london markets / lloyd's)",
+    "reason": "fit 0.08: Severe seniority mismatch: role requires 8\u201310 years with 3+ years PolicyCenter experience, candidate has ~1 year post-graduation; no Guidewire, GOSU, or insurance/Lloyd's domain knowledge; fundamentally entry-level candidate for intermediate-senior role.",
+    "role": "Guidewire PolicyCenter - Configuration Developer (London Markets / Lloyd's)",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "capgemini::senior java developer": {
+    "company": "Capgemini",
+    "fit_score": 0.08,
+    "key": "capgemini::senior java developer",
+    "reason": "fit 0.08: Critical seniority mismatch: this is a Senior role requiring proven enterprise experience and strong Java expertise, but the candidate is a recent MPhil graduate with only 3 months professional experience and no Java background (Python/C++ focused).",
+    "role": "Senior Java Developer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "capgemini::software engineer": {
+    "company": "Capgemini",
+    "fit_score": 0.28,
+    "key": "capgemini::software engineer",
+    "reason": "fit 0.28: Strong fundamentals but critical skill gaps: no JavaScript/TypeScript or Angular (essential requirements), no Java experience, and limited professional track record (3 months current role); background is systems/ML-focused, not full-stack web development.",
+    "role": "Software Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "capua::chemical engineer": {
+    "company": "Capua",
+    "fit_score": 0.08,
+    "key": "capua::chemical engineer",
+    "reason": "fit 0.08: Critical domain mismatch: role requires hands-on chemistry/materials lab experience and degree in Materials Science/Chemistry/Chemical Engineering, but candidate is a software engineer with Physics background and only computational research experience, lacking foundational materials chemistry knowledge and practical wet-lab credentials.",
+    "role": "Chemical Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "cbre::contract support": {
+    "company": "CBRE",
+    "fit_score": 0.1,
+    "key": "cbre::contract support",
+    "reason": "fit 0.10: This administrative support role is significantly below your current seniority as a deployment engineer and contradicts your stated goal of finding a software-engineering position; it doesn't leverage your technical background (Python, C++, ML, systems) and would represent a career step backward.",
+    "role": "Contract Support",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "cbre::multi-skilled 2ic shift technician (electrically biased)": {
+    "company": "CBRE",
+    "fit_score": 0.05,
+    "key": "cbre::multi-skilled 2ic shift technician (electrically biased)",
+    "reason": "fit 0.05: Severe seniority mismatch: Dario is an overqualified software engineer with an MPhil seeking engineering roles, while this is an HVAC technician position requiring hands-on climate control systems expertise he lacks; his career trajectory and stated goals are completely misaligned with this role.",
+    "role": "Multi-skilled 2IC Shift Technician (Electrically Biased)",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "cbre::operations control centre manager": {
+    "company": "CBRE",
+    "fit_score": 0.08,
+    "key": "cbre::operations control centre manager",
+    "reason": "fit 0.08: Complete domain mismatch: this operations/facility management role requires Building Services expertise, team leadership, BMS/BEMS systems knowledge, and H&S certifications\u2014Dario is a software engineer with zero background in building operations, no team management experience, and no relevant technical qualifications.",
+    "role": "Operations Control Centre Manager",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "central east integrated care board::senior digital solutions developer": {
+    "company": "Central East Integrated Care Board",
+    "fit_score": 0.2,
+    "key": "central east integrated care board::senior digital solutions developer",
+    "reason": "fit 0.20: Significant seniority mismatch: Dario is early-career (MPhil + 2 months production engineering) for a senior role requiring mentoring and operational leadership; lacks domain expertise (UIPath, SQL Server, ITIL, NHS healthcare environment).",
+    "role": "Senior Digital Solutions Developer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "charities aid foundation::product analyst- ai and automation": {
+    "company": "Charities Aid Foundation",
+    "fit_score": 0.33,
+    "key": "charities aid foundation::product analyst- ai and automation",
+    "reason": "fit 0.33: Strong technical AI/automation knowledge but lacks core competencies: business analysis/product analysis experience, regulated environment background, and governance expertise required for this banking role.",
+    "role": "Product Analyst- AI and Automation",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "cirium::cloud engineer": {
+    "company": "Cirium",
+    "fit_score": 0.28,
+    "key": "cirium::cloud engineer",
+    "reason": "fit 0.28: Strong technical fundamentals but significant skills gap: CV lacks AWS experience (core requirement), Infrastructure as Code tools (Terraform/CloudFormation), observability platforms (Grafana), Bash scripting, and disaster recovery knowledge\u2014the role requires mid-level cloud infrastructure operations expertise while candidate has ~2 months of junior deployment engineering experience focused on data pipelines.",
+    "role": "Cloud Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "citi::fx options quantitative analyst (vice president)": {
+    "company": "Citi",
+    "fit_score": 0.08,
+    "key": "citi::fx options quantitative analyst (vice president)",
+    "reason": "fit 0.08: Severe seniority mismatch: VP role requires several years of quantitative finance experience in financial institutions; candidate has only 2 months startup deployment work and no derivatives/FX options background, though C++/Python skills and MPhil provide some technical foundation.",
+    "role": "FX Options Quantitative Analyst (Vice President)",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "citi::quant developer \u2013 trading analytics \u2013 equity derivatives tech": {
+    "company": "Citi",
+    "fit_score": 0.43,
+    "key": "citi::quant developer \u2013 trading analytics \u2013 equity derivatives tech",
+    "reason": "fit 0.43: Excellent foundational fit (Cambridge Physics/ML MPhil, strong Python, demonstrated trading systems experience, agentic AI expertise), but significant gaps in required data engineering stack (Pandas, FastAPI, Airflow, Streamlit, Ray, Parquet, Snowflake/Trino) and only 2 months commercial experience\u2014likely overqualified in theory but underqualified in practice for this production-scale role.",
+    "role": "Quant Developer \u2013 Trading Analytics \u2013 Equity Derivatives Tech",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "citi::senior engineering manager, svp": {
+    "company": "Citi",
+    "fit_score": 0.08,
+    "key": "citi::senior engineering manager, svp",
+    "reason": "fit 0.08: Catastrophic seniority mismatch (SVP-level role requiring 5+ years senior leadership vs. entry-level candidate with 2 months professional experience), zero financial engineering domain expertise (CDS, CLOs, credit risk), no Java/Spring Boot (explicitly required), and this specialized fintech role is 10-15 years ahead of candidate's current career stage.",
+    "role": "Senior Engineering Manager, SVP",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "citi::senior vice president, product manager \u2014 technical & ai-enabled - investor services": {
+    "company": "Citi",
+    "fit_score": 0.03,
+    "key": "citi::senior vice president, product manager \u2014 technical & ai-enabled - investor services",
+    "reason": "fit 0.03: Severe seniority and role-type mismatch: this is an SVP-level Product Manager role requiring significant financial services PM experience and Java/JavaScript expertise; Dario is a junior-level software engineer with zero product management experience, zero financial services background, no Java or JavaScript, and no leadership experience despite strong AI/ML and Python fundamentals.",
+    "role": "Senior Vice President, Product Manager \u2014 Technical & AI-Enabled - Investor Services",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "clearroute::ai platform engineer": {
+    "company": "ClearRoute",
+    "fit_score": 0.3,
+    "key": "clearroute::ai platform engineer",
+    "reason": "fit 0.30: Candidate lacks essential platform engineering skills (cloud platforms, Kubernetes, Terraform, CI/CD pipelines) required for this specialized role, despite strong software fundamentals and useful LLM/AI familiarity.",
+    "role": "AI Platform Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "client server::c++ software engineer - hedge fund": {
+    "company": "Client Server",
+    "fit_score": 0.25,
+    "key": "client server::c++ software engineer - hedge fund",
+    "reason": "fit 0.25: Strong C++ and multithreading fundamentals, but too junior (recent graduate, 2 months into first role) for an explicitly senior position, and critically lacks FIX protocol and front-office trading/hedge fund domain experience.",
+    "role": "C++ Software Engineer - Hedge Fund",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "client server::senior software engineer python fastapi": {
+    "company": "Client Server",
+    "fit_score": 0.3,
+    "key": "client server::senior software engineer python fastapi",
+    "reason": "fit 0.30: Seniority mismatch\u2014candidate is 2 months into first professional role (deployment engineer since April 2026) for a Senior role expecting microservices/fintech experience; also lacks FastAPI/Django/Flask and professional financial services background despite strong Python fundamentals and Cambridge credentials.",
+    "role": "Senior Software Engineer Python FastAPI",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "cloudiqs::aws devops engineer": {
+    "company": "CloudiQS",
+    "fit_score": 0.15,
+    "key": "cloudiqs::aws devops engineer",
+    "reason": "fit 0.15: Severe seniority and skill mismatch: candidate is a recent graduate with 4 months of general deployment experience, but role requires 5 years of AWS experience and AWS certification; CV shows zero AWS, Docker, Kubernetes, Jenkins, Terraform, Ansible, or CI/CD pipeline experience\u2014all core requirements.",
+    "role": "AWS DevOps Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "contentsquare::senior product designer": {
+    "company": "Contentsquare",
+    "fit_score": 0.08,
+    "key": "contentsquare::senior product designer",
+    "reason": "fit 0.08: Candidate is a software engineer with zero product/UX design experience applying for a Senior Product Designer role requiring 5+ years of design expertise\u2014fundamental career mismatch, not seniority-mismatched in a recoverable way.",
+    "role": "Senior Product Designer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "contentsquare::senior product manager": {
+    "company": "Contentsquare",
+    "fit_score": 0.08,
+    "key": "contentsquare::senior product manager",
+    "reason": "fit 0.08: Candidate is a software engineer with zero product management experience applying for a Senior PM role requiring 5+ years of B2B SaaS PM background; severe seniority and career-path mismatch.",
+    "role": "Senior Product Manager",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "creative recruitment::junior graphic designer \u2013 social & campaigns": {
+    "company": "Creative Recruitment",
+    "fit_score": 0.08,
+    "key": "creative recruitment::junior graphic designer \u2013 social & campaigns",
+    "reason": "fit 0.08: Fundamental career field mismatch: this is a graphic design role requiring Adobe CC, campaign/social design experience, and design qualifications, while the candidate is a software engineer with zero design experience whose only visual work (DirectX graphics engine) is low-level graphics programming, not graphic design.",
+    "role": "Junior Graphic Designer \u2013 Social & Campaigns",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "crossing hurdles::data scientist | remote": {
+    "company": "Crossing Hurdles",
+    "fit_score": 0.7,
+    "key": "crossing hurdles::data scientist | remote",
+    "reason": "role unavailable: page not found \u2014 https://jobs.ashbyhq.com/crossinghurdles returned a dead page with no job listings",
+    "role": "Data Scientist | Remote",
+    "role_url": "https://jobs.ashbyhq.com/crossinghurdles",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:58:32Z"
+  },
+  "crossing hurdles::machine learning researcher | remote": {
+    "company": "Crossing Hurdles",
+    "fit_score": 0.52,
+    "key": "crossing hurdles::machine learning researcher | remote",
+    "reason": "fit 0.52: Has strong ML fundamentals and a recent research degree, but lacks the specific TensorFlow experience (has PyTorch-style background instead) and publication/scholarly track record expected for a researcher role, with junior seniority relative to the 'proven track record' requirement.",
+    "role": "Machine Learning Researcher | Remote",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "crossing hurdles::software engineer | remote": {
+    "company": "Crossing Hurdles",
+    "fit_score": 0.3,
+    "key": "crossing hurdles::software engineer | remote",
+    "reason": "fit 0.30: Significant seniority mismatch (candidate is early-career with 3 months professional experience, role requires Senior level), and missing core required skills: no hands-on AWS/GCP/Azure experience, no JavaScript/TypeScript/React proficiency, and limited DevOps/containerization depth.",
+    "role": "Software Engineer | Remote",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "crown sds (service delivery solutions)::it support technician": {
+    "company": "Crown SDS (Service Delivery Solutions)",
+    "fit_score": 0.0,
+    "key": "crown sds (service delivery solutions)::it support technician",
+    "reason": "salary: max \u00a330,000 below floor \u00a340,000",
+    "role": "IT Support Technician",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "databricks::forward deployed engineer - emerging enterprise & dnb": {
+    "company": "Databricks",
+    "fit_score": 0.4,
+    "key": "databricks::forward deployed engineer - emerging enterprise & dnb",
+    "reason": "fit 0.40: Strong general engineering fundamentals and Python skills with production deployment experience, but critical gaps in Apache Spark, cloud platforms (AWS/Azure/GCP), data engineering expertise, and Databricks certification\u2014all core requirements for this specialized data platform role.",
+    "role": "Forward Deployed Engineer - Emerging Enterprise & DNB",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "dtg global::ai integration engineer": {
+    "company": "DTG Global",
+    "fit_score": 0.48,
+    "key": "dtg global::ai integration engineer",
+    "reason": "fit 0.48: Strong AI integration and production engineering fundamentals, but seniority-mismatched (role seeks Senior level; candidate is early-career) and critically lacks hands-on Azure experience which is explicitly required.",
+    "role": "AI Integration Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "durham university::research assistant": {
+    "company": "Durham University",
+    "fit_score": 0.0,
+    "key": "durham university::research assistant",
+    "reason": "salary: max \u00a337,694 below floor \u00a340,000",
+    "role": "Research Assistant",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "durlston partners::c++ software engineer": {
+    "company": "Durlston Partners",
+    "fit_score": 0.2,
+    "key": "durlston partners::c++ software engineer",
+    "reason": "fit 0.20: Severe seniority and domain-experience mismatch: candidate has only 2 months of commercial experience with no HFT or low-latency systems background, while the role explicitly requires 'strong commercial experience in low latency or ultra-low latency systems' at a systematic trading firm.",
+    "role": "C++ Software Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "durlston partners::software engineer": {
+    "company": "Durlston Partners",
+    "fit_score": 0.38,
+    "key": "durlston partners::software engineer",
+    "reason": "fit 0.38: Strong Python fundamentals and full-ownership mindset, but significantly below the required 2+ years of industry experience (~5 months total across roles) and lacks the required TypeScript proficiency.",
+    "role": "Software Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "edge capital group::senior quantitative researcher": {
+    "company": "Edge Capital Group",
+    "fit_score": 0.2,
+    "key": "edge capital group::senior quantitative researcher",
+    "reason": "fit 0.20: Significant seniority mismatch\u2014role explicitly seeks senior researcher with proven alpha generation track record; candidate is 1 year post-graduation with 2 months professional experience, though self-directed trading bot demonstrates relevant full-stack thinking.",
+    "role": "Senior Quantitative Researcher",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "electronrx::graduate / placement software engineer": {
+    "company": "electronRx",
+    "fit_score": 0.57,
+    "key": "electronrx::graduate / placement software engineer",
+    "reason": "fit 0.57: Strong fundamentals and seniority match, but significant gap in JavaScript/React/GCP stack\u2014core to this web/mobile frontend role; background is systems/ML-focused rather than web-focused.",
+    "role": "Graduate / Placement Software Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "engie::sustainability engineer/ consultant- london or bicester": {
+    "company": "ENGIE",
+    "fit_score": 0.08,
+    "key": "engie::sustainability engineer/ consultant- london or bicester",
+    "reason": "fit 0.08: Complete domain mismatch: Dario is a software engineer with ML/data science expertise but the role requires sustainability/construction consulting with mandatory LEED/BREEAM certifications and 12-18 months of relevant project delivery experience\u2014neither of which he possesses.",
+    "role": "Sustainability Engineer/ Consultant- London or Bicester",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "epassi::senior java engineer": {
+    "company": "Epassi",
+    "fit_score": 0.08,
+    "key": "epassi::senior java engineer",
+    "reason": "fit 0.08: This is a senior staff role requiring 6+ years and 3+ years of production Java/Spring/Kafka/microservices experience; you have ~6 months professional experience, zero Java background, and no backend-at-scale or event-driven architecture experience\u2014the seniority and skills gap is disqualifying.",
+    "role": "Senior Java Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "erin associates ltd::junior embedded software engineer": {
+    "company": "Erin Associates Ltd",
+    "fit_score": 0.0,
+    "key": "erin associates ltd::junior embedded software engineer",
+    "reason": "salary: max \u00a335,000 below floor \u00a340,000",
+    "role": "Junior Embedded Software Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "etl systems ltd::principal fpga engineer": {
+    "company": "ETL Systems Ltd",
+    "fit_score": 0.03,
+    "key": "etl systems ltd::principal fpga engineer",
+    "reason": "fit 0.03: Candidate lacks the core FPGA/HDL expertise required for this senior role (no Verilog/VHDL, no hardware design experience, no DSP or signal processing work) and is significantly early-career for a Principal-level position requiring architecture leadership and mentoring.",
+    "role": "Principal FPGA Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "evoke::mi developer": {
+    "company": "evoke",
+    "fit_score": 0.3,
+    "key": "evoke::mi developer",
+    "reason": "fit 0.30: Strong technical fundamentals and SQL skills, but lacks the core MI/BI role experience and essential tools (Power BI, Snowflake, Power Automate) that are central to this Compliance MI Developer position.",
+    "role": "MI Developer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "expedia group::mobile engineer ii, android": {
+    "company": "Expedia Group",
+    "fit_score": 0.2,
+    "key": "expedia group::mobile engineer ii, android",
+    "reason": "fit 0.20: Candidate lacks the core minimum qualification: no Android development experience and no Kotlin proficiency, which are essential for a Mobile Engineer II role, despite strong general software engineering fundamentals.",
+    "role": "Mobile Engineer II, Android",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "experis uk::artificial intelligence engineer": {
+    "company": "Experis UK",
+    "fit_score": 0.65,
+    "key": "experis uk::artificial intelligence engineer",
+    "reason": "relocation not worth it: No disclosed salary premium, recruitment firm employer, and no once-in-a-career opportunity.",
+    "role": "Artificial Intelligence Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "experis uk::data scientist": {
+    "company": "Experis UK",
+    "fit_score": 0.3,
+    "key": "experis uk::data scientist",
+    "reason": "fit 0.30: DV clearance is a mandatory hard requirement but not evident in CV; while ML and Python skills are strong, candidate lacks proven Defence/Security sector experience and would need months to acquire clearance.",
+    "role": "Data Scientist",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "experis uk::devops engineer": {
+    "company": "Experis UK",
+    "fit_score": 0.25,
+    "key": "experis uk::devops engineer",
+    "reason": "fit 0.25: Geographically mismatched (London vs Newcastle), lacks demonstrated DevOps-specific expertise (Kubernetes, Docker, Terraform, cloud platforms, enterprise CI/CD), and early-career stage (3 months experience) makes this a poor fit for a mid-level Defence security role requiring SC clearance.",
+    "role": "DevOps Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "fai::junior data scientist - insite": {
+    "company": "FAI",
+    "fit_score": 0.85,
+    "key": "fai::junior data scientist - insite",
+    "reason": "role unavailable: page not found \u2014 https://jobs.ashbyhq.com/fai returned a 404/dead page, so the FAI careers board and the target role (Junior Data Scientist - Insite) are inaccessible.",
+    "role": "Junior Data Scientist - Insite",
+    "role_url": "https://jobs.ashbyhq.com/fai",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:20:35Z"
+  },
+  "fifty5blue::data scientist": {
+    "company": "Fifty5Blue",
+    "fit_score": 0.87,
+    "key": "fifty5blue::data scientist",
+    "reason": "role unavailable: the Fifty5Blue careers page at https://jobs.ashbyhq.com/fifty5blue returned \"page not found\" \u2014 the organisation or its job listings do not exist on Ashby HQ",
+    "role": "Data Scientist",
+    "role_url": "https://jobs.ashbyhq.com/fifty5blue",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:18:34Z"
+  },
+  "financial conduct authority::markets data scientist": {
+    "company": "Financial Conduct Authority",
+    "fit_score": 0.4,
+    "key": "financial conduct authority::markets data scientist",
+    "reason": "fit 0.40: Lacks professional financial markets and regulatory experience (essential requirement); missing key tools explicitly required (Tableau, Redshift); trading hobby project insufficient for FCA regulatory role despite strong core technical skills.",
+    "role": "Markets Data Scientist",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "fitfile::technical delivery engineer": {
+    "company": "FITFILE",
+    "fit_score": 0.08,
+    "key": "fitfile::technical delivery engineer",
+    "reason": "fit 0.08: Severe seniority mismatch: role requires 5+ years of production systems experience, but candidate has ~2.5 years total (2 months in current role); missing critical technical skills (TypeScript, Kubernetes, Docker, Terraform, AWS/Azure, Grafana, CI/CD, networking fundamentals) and zero healthcare domain experience.",
+    "role": "Technical Delivery Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "flipper devices inc::motion graphic designer": {
+    "company": "Flipper Devices Inc",
+    "fit_score": 0.08,
+    "key": "flipper devices inc::motion graphic designer",
+    "reason": "fit 0.08: Strong software engineering background, but lacks required 3D design software (Blender/Cinema 4D/KeyShot), animation, photo compositing, Adobe Creative Suite, and PBR experience\u2014fundamentally a design role requiring specialized creative skills outside candidate's software engineering and ML expertise.",
+    "role": "Motion Graphic Designer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "fuse energy::applied ai engineer": {
+    "company": "Fuse Energy",
+    "fit_score": 0.28,
+    "key": "fuse energy::applied ai engineer",
+    "reason": "fit 0.28: Strong AI/ML fundamentals and production deployment experience, but critically under-qualifies on the 3-year engineering minimum (only ~2 months professional experience), lacks backend engineering title/experience, and missing cloud/containerization skills\u2014a clear seniority mismatch.",
+    "role": "Applied AI Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "g-research::software engineer \u2014 observability instrumentation": {
+    "company": "G-Research",
+    "fit_score": 0.28,
+    "key": "g-research::software engineer \u2014 observability instrumentation",
+    "reason": "fit 0.28: Candidate has strong Python/C# fundamentals and recent production engineering experience, but lacks the specific required hands-on experience with OpenTelemetry SDKs, Kubernetes, DevOps tooling (Terraform/ArgoCD/Helm), and cloud-native observability platforms\u2014this is a mid-level role requiring these specific skills, and he is too junior with only 3 months of production experience.",
+    "role": "Software Engineer \u2014 Observability Instrumentation",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "galaxy::vp, algo/sor developer": {
+    "company": "Galaxy",
+    "fit_score": 0.08,
+    "key": "galaxy::vp, algo/sor developer",
+    "reason": "fit 0.08: Extreme seniority mismatch (VP role requiring 8+ years experience; candidate has ~2 months professional experience), critical skill gap (Java required but not in CV), and no domain expertise in algorithmic trading, FX/crypto markets, or EMS/SOR systems despite strong foundational CS skills.",
+    "role": "VP, Algo/SOR Developer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "goldman sachs::asset & wealth management - data scientist - associate - london": {
+    "company": "Goldman Sachs",
+    "fit_score": 0.28,
+    "key": "goldman sachs::asset & wealth management - data scientist - associate - london",
+    "reason": "fit 0.28: Strong educational background and impressive ML fundamentals, but critically lacks the required 2+ years of relevant commercial data science experience; currently only 2.5 months into first deployment role post-graduation, making this an Associate-level role for which he's significantly junior.",
+    "role": "Asset & Wealth Management - Data Scientist - Associate - London",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "google::staff software engineer, android growth systems and app foundations": {
+    "company": "Google",
+    "fit_score": 0.08,
+    "key": "google::staff software engineer, android growth systems and app foundations",
+    "reason": "fit 0.08: Extreme seniority mismatch: candidate has ~2 months professional experience vs. 8-year minimum requirement, plus zero Android development experience (5 years required) and lacks shipping/product launch track record.",
+    "role": "Staff Software Engineer, Android Growth Systems and App Foundations",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "granicus united kingdom::principal ai solutions advisor": {
+    "company": "Granicus United Kingdom",
+    "fit_score": 0.15,
+    "key": "granicus united kingdom::principal ai solutions advisor",
+    "reason": "fit 0.15: Severe seniority and domain mismatch: this Principal-level sales/GTM role requires 10+ years of government or public sector experience, but the candidate is a junior engineer (1-2 years total) with zero government background; the role fundamentally requires government relationships and sales expertise, not technical engineering skills.",
+    "role": "Principal AI Solutions Advisor",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "h2 cognitive designs::quality assurance engineer": {
+    "company": "H2 Cognitive Designs",
+    "fit_score": 0.2,
+    "key": "h2 cognitive designs::quality assurance engineer",
+    "reason": "fit 0.20: Strong software engineer with production experience, but lacks dedicated QA automation experience (Playwright, Cypress, Selenium, k6/JMeter) and specialized testing methodology required for this core QA engineering role.",
+    "role": "Quality Assurance Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "hackajob::macro trade capture developer": {
+    "company": "hackajob",
+    "fit_score": 0.2,
+    "key": "hackajob::macro trade capture developer",
+    "reason": "fit 0.20: Significant seniority mismatch\u2014role expects Assistant Vice President with team leadership and operational responsibility, while candidate is early-career individual contributor; additionally lacks required enterprise systems experience (messaging middleware, Oracle, financial trade capture), and relocation from London to Glasgow is unaddressed.",
+    "role": "Macro Trade Capture Developer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "hackajob::quantitative developer": {
+    "company": "hackajob",
+    "fit_score": 0.58,
+    "key": "hackajob::quantitative developer",
+    "reason": "fit 0.58: Strong mathematical and programming fundamentals (MPhil, Python/C++/C# proficiency, ML projects including a trading bot) align well with technical needs, but lacks the explicitly required 'initial industry experience working as a quant within a financial services organisation' and has no demonstrated knowledge of derivatives or Greeks\u2014material gaps for a specialized quant finance role, though the job posting encourages applications from those not meeting all criteria.",
+    "role": "Quantitative Developer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "hangar 13::senior gameplay and animation engineer": {
+    "company": "Hangar 13",
+    "fit_score": 0.18,
+    "key": "hangar 13::senior gameplay and animation engineer",
+    "reason": "fit 0.18: Strong C++ and graphics fundamentals, but critically missing shipped AAA game titles, Unreal Engine experience, GAS expertise, and animation systems knowledge\u2014essential requirements for a Senior role at a AAA studio; candidate is early-career with startup deployment experience, not game industry background.",
+    "role": "Senior Gameplay and Animation Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "hargreaves lansdown asset management limited::senior software engineer - identity": {
+    "company": "HARGREAVES LANSDOWN ASSET MANAGEMENT LIMITED",
+    "fit_score": 0.2,
+    "key": "hargreaves lansdown asset management limited::senior software engineer - identity",
+    "reason": "fit 0.20: Significant seniority and tech-stack mismatch: role requires Senior-level professional expertise in TypeScript/React/AWS/Identity services with proven CIAM experience, but candidate has only ~3 months of professional engineering experience and no demonstrated background in web development, cloud infrastructure, or identity management.",
+    "role": "Senior Software Engineer - Identity",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "harman::software systems engineer - luxury audio": {
+    "company": "Harman",
+    "fit_score": 0.1,
+    "key": "harman::software systems engineer - luxury audio",
+    "reason": "fit 0.10: Severe seniority mismatch: role requires 10+ years' consumer audio systems experience and mid-to-senior level (T4), while Dario is a junior engineer 2 months into first real role post-MPhil with zero audio, embedded systems, or hardware debugging background.",
+    "role": "Software Systems Engineer - Luxury Audio",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "harrington starr::quantitative researcher": {
+    "company": "Harrington Starr",
+    "fit_score": 0.7,
+    "key": "harrington starr::quantitative researcher",
+    "reason": "role unavailable: page not found \u2014 the Harrington Starr Ashby jobs board returned a 404/dead page, so no roles (including Quantitative Researcher) are accessible",
+    "role": "Quantitative Researcher",
+    "role_url": "https://jobs.ashbyhq.com/harringtonstarr",
+    "status": "skipped",
+    "timestamp": "2026-06-16T21:04:26Z"
+  },
+  "haystack::ai engineer": {
+    "company": "Haystack",
+    "fit_score": 0.6,
+    "key": "haystack::ai engineer",
+    "reason": "relocation not worth it: Relocation to Cardiff required with no salary information, unspecified employer, or unique opportunity vs. London AI engineering roles.",
+    "role": "AI Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "haystack::devops engineer": {
+    "company": "Haystack",
+    "fit_score": 0.25,
+    "key": "haystack::devops engineer",
+    "reason": "fit 0.25: Candidate lacks essential DevOps requirements (Kubernetes, cloud platforms, Terraform, observability tools, SRE/platform engineering experience), has only 2 months of deployment-focused engineering at a startup rather than infrastructure/operations background, and is London-based for a role requiring Aberdeen area presence.",
+    "role": "DevOps Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "haystack::platform engineer": {
+    "company": "Haystack",
+    "fit_score": 0.18,
+    "key": "haystack::platform engineer",
+    "reason": "fit 0.18: Critical blocker: role requires Active SC Clearance (not mentioned on CV) and AWS/cloud infrastructure expertise, while candidate's background is in data science and systems programming with only 2 months of deployment engineering experience at a startup.",
+    "role": "Platform Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "health research authority::senior user researcher": {
+    "company": "Health Research Authority",
+    "fit_score": 0.0,
+    "key": "health research authority::senior user researcher",
+    "reason": "fit 0.00: Candidate is a junior software engineer with zero user research, UX methods, or team management experience; this senior role requires extensive GDS standards, qualitative/quantitative research expertise, and service design background\u2014a fundamental domain and seniority mismatch.",
+    "role": "Senior User Researcher",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "hm revenue & customs::infrastructure operations engineer": {
+    "company": "HM Revenue & Customs",
+    "fit_score": 0.0,
+    "key": "hm revenue & customs::infrastructure operations engineer",
+    "reason": "salary: max \u00a333,270 below floor \u00a340,000",
+    "role": "Infrastructure Operations Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "hr wallingford::senior dredging consultant": {
+    "company": "HR Wallingford",
+    "fit_score": 0.02,
+    "key": "hr wallingford::senior dredging consultant",
+    "reason": "fit 0.02: Candidate lacks the required dredging/maritime industry experience and civil engineering background; their software engineering background in ML and graphics systems is entirely misaligned with this specialized heavy civils consulting role requiring 5+ years in dredging or strong maritime/earthworks foundations.",
+    "role": "Senior Dredging Consultant",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "hunter bond::platform specialist - kubernetes - trading - \u00a3120,000-\u00a3200,000 + bonus": {
+    "company": "Hunter Bond",
+    "fit_score": 0.18,
+    "key": "hunter bond::platform specialist - kubernetes - trading - \u00a3120,000-\u00a3200,000 + bonus",
+    "reason": "fit 0.18: Strong foundational skills (Python, Linux, production engineering) and correct location, but lacks the core Kubernetes, container orchestration, and CI/CD expertise the role explicitly requires for a specialist-level position; candidate is early-career (~2 months as deployment engineer) for a mid-level SME role.",
+    "role": "Platform Specialist - Kubernetes - Trading - \u00a3120,000-\u00a3200,000 + Bonus",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "hunter bond::software developer (c++) \u2013 up to \u00a3120,000 + bonus + package": {
+    "company": "Hunter Bond",
+    "fit_score": 0.38,
+    "key": "hunter bond::software developer (c++) \u2013 up to \u00a3120,000 + bonus + package",
+    "reason": "fit 0.38: Significant seniority mismatch: job targets experienced developers for an elite firm with world records, while candidate is recently graduated (June 2025) with only 2 months of professional experience, though C++ fundamentals are solid.",
+    "role": "Software Developer (C++) \u2013 Up to \u00a3120,000 + Bonus + Package",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "ice::analyst, global quantitative research": {
+    "company": "ICE",
+    "fit_score": 0.42,
+    "key": "ice::analyst, global quantitative research",
+    "reason": "fit 0.42: Strong quantitative foundation and programming skills match the role's technical requirements, but lacks the critical financial domain experience (derivatives pricing, risk modeling, clearing house operations) and no prior work in financial institutions despite this being a stated preference and core responsibility.",
+    "role": "Analyst, Global Quantitative Research",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "ice::quantitative analyst": {
+    "company": "ICE",
+    "fit_score": 0.35,
+    "key": "ice::quantitative analyst",
+    "reason": "fit 0.35: Strong fundamentals and relevant education (MPhil + Physics), but significant gaps: no explicit stochastic calculus background (explicitly required), limited C++ production experience despite role emphasis on 'production-level C++', minimal professional quantitative experience (prefers 3 years), and seniority mismatch for a leadership/mentoring role\u2014candidate is a recent MPhil graduate with only 2.5 months in current deployment engineer position.",
+    "role": "Quantitative Analyst",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "icr::research data officer (epidemiology)": {
+    "company": "ICR",
+    "fit_score": 0.38,
+    "key": "icr::research data officer (epidemiology)",
+    "reason": "fit 0.38: Strong data and programming skills but lacks the required MSc in epidemiology/biostatistics/data science, has no epidemiological domain experience, and current background is physics/data science rather than epidemiology-focused research.",
+    "role": "Research Data Officer (Epidemiology)",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "ig group::senior cloud platform engineer": {
+    "company": "IG Group",
+    "fit_score": 0.08,
+    "key": "ig group::senior cloud platform engineer",
+    "reason": "fit 0.08: Significant seniority and domain mismatch: role requires 4+ years cloud infrastructure engineering with GCP/Terraform/platform expertise; candidate has ~3 months professional experience as a deployment engineer with no demonstrated cloud infrastructure, GCP, Terraform, or platform engineering background.",
+    "role": "Senior Cloud Platform Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "imagination technologies::staff/principal systems architect": {
+    "company": "Imagination Technologies",
+    "fit_score": 0.15,
+    "key": "imagination technologies::staff/principal systems architect",
+    "reason": "fit 0.15: Severe seniority mismatch: this Staff/Principal Systems Architect role requires 10+ years of GPU architecture and ASIC design expertise, but Dario is a junior engineer (2 months in current role, fresh MPhil) with graphics API experience but no GPU microarchitecture or silicon design background.",
+    "role": "Staff/Principal Systems Architect",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "indra group uk & ireland::software engineer": {
+    "company": "Indra Group UK & Ireland",
+    "fit_score": 0.32,
+    "key": "indra group uk & ireland::software engineer",
+    "reason": "fit 0.32: Significant experience gap (6 months vs 2-3 years required) and domain mismatch\u2014role targets embedded systems for aviation; candidate has ML, data pipelines, and graphics background with no demonstrated embedded or aerospace systems work.",
+    "role": "Software Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "information tech consultants::machine learning engineer": {
+    "company": "Information Tech Consultants",
+    "fit_score": 0.28,
+    "key": "information tech consultants::machine learning engineer",
+    "reason": "fit 0.28: Strong technical fit (London-based, Master's degree, Python/SQL/ML skills) but severe seniority mismatch: candidate has ~2.5 months professional experience versus the required 2\u20134 years, making this a mid-level role for a recent graduate.",
+    "role": "Machine Learning Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "intellect group::back end developer": {
+    "company": "Intellect Group",
+    "fit_score": 0.2,
+    "key": "intellect group::back end developer",
+    "reason": "fit 0.20: Significant seniority mismatch: role requires 5+ years commercial backend experience and is explicitly senior-level, but candidate has <1 year actual backend experience; additionally missing Azure cloud and enterprise software background required for the role.",
+    "role": "Back End Developer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "interex group::data scientist": {
+    "company": "InterEx Group",
+    "fit_score": 0.65,
+    "key": "interex group::data scientist",
+    "reason": "role unavailable: page not found \u2014 https://jobs.ashbyhq.com/interexgroup returned a dead page with no job listings",
+    "role": "Data Scientist",
+    "role_url": "https://jobs.ashbyhq.com/interexgroup",
+    "status": "skipped",
+    "timestamp": "2026-06-16T21:12:46Z"
+  },
+  "jack & jill::ai engineer at amplifyr limited": {
+    "company": "Jack & Jill",
+    "fit_score": 0.15,
+    "key": "jack & jill::ai engineer at amplifyr limited",
+    "reason": "fit 0.15: Severe seniority mismatch: role requires 3-5 years experience with 2+ years shipping LLM systems to production, but candidate has ~2 months professional experience post-graduation with no professional LLM/GenAI production work, missing AWS and RAG expertise despite strong Python and promising ML fundamentals.",
+    "role": "AI Engineer at AMPLIFYR Limited",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "jack & jill::ai engineer at gradient labs": {
+    "company": "Jack & Jill",
+    "fit_score": 0.72,
+    "key": "jack & jill::ai engineer at gradient labs",
+    "reason": "role unavailable: page not found \u2014 https://jobs.ashbyhq.com/jackjill returned a dead page (404/no openings)",
+    "role": "AI Engineer at Gradient Labs",
+    "role_url": "https://jobs.ashbyhq.com/jackjill",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:50:37Z"
+  },
+  "jack & jill::forward deployed engineer (\u00a380k-\u00a3100k + equity) at parsewise": {
+    "company": "Jack & Jill",
+    "fit_score": 0.77,
+    "key": "jack & jill::forward deployed engineer (\u00a380k-\u00a3100k + equity) at parsewise",
+    "reason": "role unavailable: careers page not found (404) at https://jobs.ashbyhq.com/jackjill",
+    "role": "Forward Deployed Engineer (\u00a380k-\u00a3100k + Equity) at Parsewise",
+    "role_url": "https://jobs.ashbyhq.com/jackjill",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:38:01Z"
+  },
+  "jack & jill::forward deployed engineer at paddington robotics limited": {
+    "company": "Jack & Jill",
+    "fit_score": 0.45,
+    "key": "jack & jill::forward deployed engineer at paddington robotics limited",
+    "reason": "fit 0.45: Strong deployment and systems fundamentals, but lacks the robotics, electrical engineering, or mechatronics background with hands-on hardware debugging experience that the role explicitly requires\u2014your experience is software/ML-focused with only junior-level repair-shop exposure.",
+    "role": "Forward Deployed Engineer at Paddington Robotics Limited",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "jack & jill::software engineer (\u00a350k-\u00a3100k+ + equity) at opfyx ltd": {
+    "company": "Jack & Jill",
+    "fit_score": 0.7,
+    "key": "jack & jill::software engineer (\u00a350k-\u00a3100k+ + equity) at opfyx ltd",
+    "reason": "role unavailable: careers page https://jobs.ashbyhq.com/jackjill returned \"page not found\" \u2014 no jobs listed",
+    "role": "Software Engineer (\u00a350k-\u00a3100k+ + Equity) at Opfyx Ltd",
+    "role_url": "https://jobs.ashbyhq.com/jackjill",
+    "status": "skipped",
+    "timestamp": "2026-06-16T21:06:55Z"
+  },
+  "jagex::automation engineer": {
+    "company": "Jagex",
+    "fit_score": 0.22,
+    "key": "jagex::automation engineer",
+    "reason": "fit 0.22: Strong software engineering fundamentals and CI/CD expertise, but lacks the explicitly required UE5 C++ experience, game QA automation background, and game development domain knowledge essential for this specialized role.",
+    "role": "Automation Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "jobster::graduate quant developer - studentjob.co.uk": {
+    "company": "Jobster",
+    "fit_score": 0.75,
+    "key": "jobster::graduate quant developer - studentjob.co.uk",
+    "reason": "role unavailable: page not found \u2014 https://jobs.ashbyhq.com/jobster returned a dead/404 page with no job listings",
+    "role": "Graduate Quant Developer - Studentjob.co.uk",
+    "role_url": "https://jobs.ashbyhq.com/jobster",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:40:26Z"
+  },
+  "jpmorganchase::devops lead software engineer - linux/python/ shell scripting": {
+    "company": "JPMorganChase",
+    "fit_score": 0.28,
+    "key": "jpmorganchase::devops lead software engineer - linux/python/ shell scripting",
+    "reason": "fit 0.28: Seniority mismatch (junior engineer, 2 months professional experience, vs. 'Lead' role requiring 5+ years); missing explicitly required qualifications (FPGA experience, FIX protocol expertise); domain expertise gap in low-latency trading infrastructure and financial systems integration.",
+    "role": "DevOps Lead Software Engineer - Linux/Python/ Shell Scripting",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "jpmorganchase::java lead esoftware engineer - equities algo trading - vp": {
+    "company": "JPMorganChase",
+    "fit_score": 0.15,
+    "key": "jpmorganchase::java lead esoftware engineer - equities algo trading - vp",
+    "reason": "fit 0.15: Significant barriers: no Java experience (required advanced proficiency), massive seniority mismatch (VP-level lead role vs. 2-month contractor experience as junior engineer), and personal trading bot cannot substitute for institutional low-latency financial systems expertise.",
+    "role": "Java Lead eSoftware Engineer - Equities Algo Trading - VP",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "jump trading::quantitative researcher | trading team": {
+    "company": "Jump Trading",
+    "fit_score": 0.74,
+    "key": "jump trading::quantitative researcher | trading team",
+    "reason": "session error: Claude Code returned an error result: Reached maximum number of turns (60)",
+    "role": "Quantitative Researcher | Trading Team",
+    "role_url": "https://job-boards.greenhouse.io/embed/job_app?token=3115552&for=jumptrading",
+    "status": "failed",
+    "timestamp": "2026-06-16T20:47:42Z"
+  },
+  "junior ai::operations associate": {
+    "company": "Junior AI",
+    "fit_score": 0.18,
+    "key": "junior ai::operations associate",
+    "reason": "fit 0.18: Dario is a software engineer with no consulting or operations/bizops background, but the role explicitly requires 18+ months consulting or 2+ years in startup bizops\u2014this is a fundamental career mismatch despite his intelligence and AI knowledge.",
+    "role": "Operations Associate",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "kepler search::energy trading quant ( mfe / mqf )": {
+    "company": "Kepler Search",
+    "fit_score": 0.12,
+    "key": "kepler search::energy trading quant ( mfe / mqf )",
+    "reason": "fit 0.12: Dario lacks the explicitly required proven trading desk and physical commodities experience, is early-career (post-MPhil with minimal professional trading background), and the job posting contains a critical location contradiction (listed as London but explicitly states Singapore-based), suggesting a poor-quality or spam repost.",
+    "role": "Energy Trading Quant ( MFE / MQF )",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "keysight technologies::software team manager": {
+    "company": "Keysight Technologies",
+    "fit_score": 0.05,
+    "key": "keysight technologies::software team manager",
+    "reason": "fit 0.05: Severe seniority mismatch: role requires 3+ years team management + 7 years C++ development; candidate has ~2 months professional engineering experience and zero management experience\u2014this is a senior position, not an entry point.",
+    "role": "Software Team Manager",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "kodu ltd::product design engineer": {
+    "company": "KODU LTD",
+    "fit_score": 0.08,
+    "key": "kodu ltd::product design engineer",
+    "reason": "fit 0.08: Complete domain mismatch: Dario is a software/ML engineer with zero CAD (SolidWorks), mechanical design, or manufacturing experience, while the role explicitly requires proven Product Design Engineer background with solid proficiency in injection moulding, DFM, tolerance analysis, and a design portfolio.",
+    "role": "Product Design Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "la fosse::c++ developer": {
+    "company": "La Fosse",
+    "fit_score": 0.52,
+    "key": "la fosse::c++ developer",
+    "reason": "fit 0.52: Strong technical fit (C++, Python, trading knowledge, Cambridge education, London location), but significant seniority mismatch: candidate has only 2.5 months professional experience while role (\u00a3150k, 'Core Strat' platform work) targets mid-level engineers with 2-3+ years experience; job posting also shows inconsistent titling and generic description suggesting possible spam repost.",
+    "role": "C++ Developer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "laing o'rourke::t&i senior engineer": {
+    "company": "Laing O'Rourke",
+    "fit_score": 0.08,
+    "key": "laing o'rourke::t&i senior engineer",
+    "reason": "fit 0.08: Severe mismatch: role requires senior construction industry experience (site/project/design management) and team leadership; candidate is a junior software engineer with zero construction background, no domain expertise, and insufficient seniority for a senior manager position.",
+    "role": "T&I SENIOR ENGINEER",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "lighthouse games::gameplay engineer": {
+    "company": "Lighthouse Games",
+    "fit_score": 0.25,
+    "key": "lighthouse games::gameplay engineer",
+    "reason": "fit 0.25: Candidate lacks required professional Unreal Engine and game development experience; while strong in C++ fundamentals and graphics programming, this role explicitly requires gameplay engineering on shipped console/PC titles, representing a career pivot from deployment/systems engineering.",
+    "role": "Gameplay Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "lloyds banking group::quantitative model development- associate director": {
+    "company": "Lloyds Banking Group",
+    "fit_score": 0.08,
+    "key": "lloyds banking group::quantitative model development- associate director",
+    "reason": "fit 0.08: Strong quantitative foundation, but massive seniority mismatch (Associate Director role requires 10+ years experience; candidate has 2 months professional software engineering experience) combined with zero financial services, credit risk modelling, or CDO/structured finance domain knowledge.",
+    "role": "Quantitative Model Development- Associate Director",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "lockheed martin::java software engineer": {
+    "company": "Lockheed Martin",
+    "fit_score": 0.12,
+    "key": "lockheed martin::java software engineer",
+    "reason": "fit 0.12: Required Java expertise entirely absent from CV; candidate is a junior developer with 2 months professional experience, while this Lockheed Martin role requires proven large-scale programme experience unsuitable for their seniority level.",
+    "role": "Java Software Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "longshot systems::software engineer": {
+    "company": "Longshot Systems",
+    "fit_score": 0.15,
+    "key": "longshot systems::software engineer",
+    "reason": "fit 0.15: Critical seniority mismatch: role requires 2+ years building mission-critical distributed systems, candidate has only ~2 months production experience; while smart with solid CS fundamentals and trading domain knowledge, lacks the proven track record this senior IC role demands.",
+    "role": "Software Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "lovey::graduate full stack software engineer": {
+    "company": "Lovey",
+    "fit_score": 0.0,
+    "key": "lovey::graduate full stack software engineer",
+    "reason": "salary: max \u00a330,000 below floor \u00a340,000",
+    "role": "Graduate Full Stack Software Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "luban homes::architectural technician": {
+    "company": "Luban Homes",
+    "fit_score": 0.08,
+    "key": "luban homes::architectural technician",
+    "reason": "fit 0.08: Dario is a software engineer with no architectural practice experience, no AutoCAD/CAD skills, and no domain knowledge in UK building regulations or construction\u2014this is a completely different field despite strong technical fundamentals and matching location.",
+    "role": "Architectural Technician",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "man group::quantitative researcher - macro assets": {
+    "company": "Man Group",
+    "fit_score": 0.2,
+    "key": "man group::quantitative researcher - macro assets",
+    "reason": "fit 0.20: Excellent academic credentials and technical foundation (Cambridge MPhil, strong Python/ML skills, genuine financial interest via trading bot), but lacks the required 2+ years of professional alpha research experience and is too junior\u2014recent graduate with only months of work history\u2014for this mid-level research role at a tier-1 hedge fund.",
+    "role": "Quantitative Researcher - Macro Assets",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "marex::software developer - clearing technology": {
+    "company": "Marex",
+    "fit_score": 0.28,
+    "key": "marex::software developer - clearing technology",
+    "reason": "fit 0.28: Strong fundamentals but substantial mismatch: lacks essential tech stack (C#/.NET, React, TypeScript, Node.js), cloud/DevOps skills (AWS, Terraform, CI/CD), and domain expertise (financial services, regulated environments, post-trade clearing); also overqualified in theory but underqualified in seniority and industry experience for a Senior role at a NASDAQ company.",
+    "role": "Software Developer - Clearing Technology",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "markem imaje::embedded software engineer": {
+    "company": "MARKEM IMAJE",
+    "fit_score": 0.18,
+    "key": "markem imaje::embedded software engineer",
+    "reason": "fit 0.18: Severe seniority and domain mismatch: role requires 5+ years embedded firmware leadership experience and microcontroller/real-time systems expertise, but candidate has ~2 months professional experience in data/DevOps with no embedded systems, firmware, or team leadership background.",
+    "role": "Embedded Software Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "market measures ltd::graduate trainee market research exec": {
+    "company": "Market Measures Ltd",
+    "fit_score": 0.0,
+    "key": "market measures ltd::graduate trainee market research exec",
+    "reason": "salary: max \u00a326,000 below floor \u00a340,000",
+    "role": "Graduate Trainee Market Research Exec",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "mbn solutions::data scientist": {
+    "company": "MBN Solutions",
+    "fit_score": 0.25,
+    "key": "mbn solutions::data scientist",
+    "reason": "fit 0.25: Strong technical fundamentals and Python/SQL/data-pipeline skills, but critical gap: lacks required domain expertise in Energy & Utilities (smart meter analysis, VEE processes, billing systems, metering) that this senior specialist role explicitly demands, with immediate mid-July start leaving no ramp-up time.",
+    "role": "Data Scientist",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "mears group::planner/works programmer": {
+    "company": "Mears Group",
+    "fit_score": 0.0,
+    "key": "mears group::planner/works programmer",
+    "reason": "salary: max \u00a329,303 below floor \u00a340,000",
+    "role": "Planner/Works Programmer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "medistrava::data scientist": {
+    "company": "MEDiSTRAVA",
+    "fit_score": 0.65,
+    "key": "medistrava::data scientist",
+    "reason": "session error: Claude Code returned an error result: Reached maximum number of turns (60)",
+    "role": "Data Scientist",
+    "role_url": "https://job-boards.greenhouse.io/medistrava/jobs/7949906?gh_src=m8wq8zq21us",
+    "status": "failed",
+    "timestamp": "2026-06-16T21:20:25Z"
+  },
+  "microsoft::applied science intern": {
+    "company": "Microsoft",
+    "fit_score": 0.25,
+    "key": "microsoft::applied science intern",
+    "reason": "fit 0.25: Overqualified (Master's degree + professional experience for an internship role) and the job posting is suspiciously vague with no actual role description\u2014appears to be a spam repost or incomplete template rather than a legitimate opportunity.",
+    "role": "Applied Science Intern",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "microsoft::c++ software developer (contract)": {
+    "company": "Microsoft",
+    "fit_score": 0.2,
+    "key": "microsoft::c++ software developer (contract)",
+    "reason": "fit 0.20: Severe seniority mismatch: role requires 5+ years professional C++ development; candidate has ~3 months as technician and ~2.5 months as deployment engineer with no computer vision experience, which is core to the position.",
+    "role": "C++ Software Developer (contract)",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "millennium::quantitative researcher - fx": {
+    "company": "Millennium",
+    "fit_score": 0.25,
+    "key": "millennium::quantitative researcher - fx",
+    "reason": "fit 0.25: Strong technical fundamentals in Monte Carlo methods and C++, but lacks the required 2+ years of FX derivatives and exotic models experience; professional background is in data engineering, not quantitative finance or trading support.",
+    "role": "Quantitative Researcher - FX",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "nan::automation engineer": {
+    "company": "nan",
+    "fit_score": 0.2,
+    "key": "nan::automation engineer",
+    "reason": "fit 0.20: Strong C++ and automation fundamentals, but lacks the critical game development expertise, UE5 experience, and game QA automation background explicitly required for this specialized role designing automation from the ground up.",
+    "role": "Automation Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "netcraft::fullstack engineering team lead": {
+    "company": "Netcraft",
+    "fit_score": 0.2,
+    "key": "netcraft::fullstack engineering team lead",
+    "reason": "fit 0.20: Severe seniority mismatch: role requires proven team leadership and mentoring experience, but candidate is a junior IC with no people management background; also critical technical mismatch\u2014role demands deep JavaScript/TypeScript/NextJS expertise, Golang, and AWS/Kubernetes, while candidate's primary stack is Python/C++ with no demonstrated frontend framework experience.",
+    "role": "Fullstack Engineering Team Lead",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "newrocket::artificial intelligence engineer": {
+    "company": "NewRocket",
+    "fit_score": 0.2,
+    "key": "newrocket::artificial intelligence engineer",
+    "reason": "fit 0.20: Candidate is ~5-7 years below the required 5-8+ years of professional experience, lacks ServiceNow and cloud platform expertise, and has limited enterprise integration and client-facing consulting background despite strong AI/ML fundamentals.",
+    "role": "Artificial Intelligence Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "nhs::it integration engineer": {
+    "company": "NHS",
+    "fit_score": 0.38,
+    "key": "nhs::it integration engineer",
+    "reason": "fit 0.38: Clear seniority and domain mismatch: fresh graduate for mid-level healthcare integration engineer role requiring HL7, FHIR, Mirth Connect, Java, and TCL expertise that are absent from CV; candidate's strength is ML/data science rather than healthcare infrastructure.",
+    "role": "IT Integration Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "nixor::junior software engineer": {
+    "company": "Nixor",
+    "fit_score": 0.25,
+    "key": "nixor::junior software engineer",
+    "reason": "fit 0.25: Lacks the explicitly required web development stack (JavaScript/TypeScript, Node.js, React) and has only ~2 months of commercial software engineering experience versus the 1\u20132 years required; while fundamentals are strong, the tech stack mismatch is substantial.",
+    "role": "Junior Software Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "ocean infinity::video platform engineer": {
+    "company": "Ocean Infinity",
+    "fit_score": 0.1,
+    "key": "ocean infinity::video platform engineer",
+    "reason": "fit 0.10: Severe seniority and domain mismatch: role requires 6+ years of production video systems experience with specific expertise in codecs, streaming protocols, FFmpeg/GStreamer, and constrained networks; candidate has ~2 months of production engineering in unrelated domain with no video systems background, zero codec/streaming knowledge, and no hands-on video tooling experience.",
+    "role": "Video Platform Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "oliver bernard::graduate forward deployed engineer- start-up - london": {
+    "company": "Oliver Bernard",
+    "fit_score": 0.62,
+    "key": "oliver bernard::graduate forward deployed engineer- start-up - london",
+    "reason": "role unavailable: page not found \u2014 the Oliver Bernard careers page at jobs.ashbyhq.com/oliverbernard returned a 404/dead page, so the target role \"Graduate Forward Deployed Engineer - Start-up - London\" could not be located",
+    "role": "Graduate Forward Deployed Engineer- Start-up - London",
+    "role_url": "https://jobs.ashbyhq.com/oliverbernard",
+    "status": "skipped",
+    "timestamp": "2026-06-16T21:23:58Z"
+  },
+  "oni::senior software engineer": {
+    "company": "ONI",
+    "fit_score": 0.2,
+    "key": "oni::senior software engineer",
+    "reason": "fit 0.20: Strong technical fundamentals in C++ and ML, but critically underqualified: role requires 5+ years image-processing experience as a Software Engineer; candidate has 2 months professional experience, no image processing or microscopy background, and is a fresh MPhil graduate\u2014not a senior-level fit.",
+    "role": "Senior Software Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "oscar::data scientist": {
+    "company": "Oscar",
+    "fit_score": 0.18,
+    "key": "oscar::data scientist",
+    "reason": "fit 0.18: Significant seniority mismatch: role requires 3+ years professional Data Science/ML experience, but candidate has ~2 months relevant professional experience; additionally lacks required framework experience (LangChain/LlamaIndex) despite strong fundamentals and recent MPhil.",
+    "role": "Data Scientist",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "oxford medical products::principal scientist": {
+    "company": "Oxford Medical Products",
+    "fit_score": 0.03,
+    "key": "oxford medical products::principal scientist",
+    "reason": "fit 0.03: Severe seniority mismatch: entry-level candidate (6 months industry experience, just completed Master's) applying for Principal Scientist role requiring 5+ years in polymer/chemical engineering/pharma manufacturing; completely lacks required expertise in polymer science, chemical engineering, manufacturing scale-up, GMP/GLP compliance, and scientific publications/patents.",
+    "role": "Principal Scientist",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "oxford university press::senior assessment technologies research manager": {
+    "company": "Oxford University Press",
+    "fit_score": 0.3,
+    "key": "oxford university press::senior assessment technologies research manager",
+    "reason": "fit 0.30: Role requires senior research leadership in educational assessment and psychometrics with 5+ years of specialized domain expertise; candidate is a junior deployment engineer with strong ML/Python skills but lacks assessment domain knowledge, research management experience, and the essential academic background in Computational Linguistics or Language Assessment.",
+    "role": "Senior Assessment Technologies Research Manager",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "pa consulting::senior ai engineer": {
+    "company": "PA Consulting",
+    "fit_score": 0.4,
+    "key": "pa consulting::senior ai engineer",
+    "reason": "fit 0.40: Seniority significantly mismatched\u2014applying for Senior AI Engineer role with only 2 months professional experience post-MPhil; additionally requires Belfast relocation and UK security clearance residency requirements are undocumented, though technical AI fundamentals are genuinely strong.",
+    "role": "Senior AI Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "paddington robotics::forward deployed engineer": {
+    "company": "Paddington Robotics",
+    "fit_score": 0.2,
+    "key": "paddington robotics::forward deployed engineer",
+    "reason": "fit 0.20: Strong software engineer with relevant deployment experience and customer-facing startup background, but lacks the required hands-on robotics and hardware/mechatronics experience explicitly needed for installation, commissioning, and on-site troubleshooting of robotics systems.",
+    "role": "Forward Deployed Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "parkside recruitment::research and development scientist": {
+    "company": "Parkside Recruitment",
+    "fit_score": 0.17,
+    "key": "parkside recruitment::research and development scientist",
+    "reason": "fit 0.17: While the candidate has a strong Physics foundation and research mindset, this is a hands-on experimental materials scientist role requiring specific expertise in liquid crystals, polymer science, and film characterization techniques\u2014domains entirely absent from their software-engineering focused CV and professional experience.",
+    "role": "Research And Development Scientist",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "phasecraft::quantum algorithms scientist - implementations": {
+    "company": "Phasecraft",
+    "fit_score": 0.08,
+    "key": "phasecraft::quantum algorithms scientist - implementations",
+    "reason": "fit 0.08: Essential criteria are not met: lacks required PhD (has MPhil only), has zero quantum computing background, no quantum hardware implementation experience, no quantum programming language skills, and no relevant publication track record.",
+    "role": "Quantum Algorithms Scientist - Implementations",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "pion inc::technical customer support coordinator": {
+    "company": "pION INC",
+    "fit_score": 0.0,
+    "key": "pion inc::technical customer support coordinator",
+    "reason": "salary: max \u00a335,000 below floor \u00a340,000",
+    "role": "Technical Customer Support Coordinator",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "podfather::junior software engineer": {
+    "company": "PODFather",
+    "fit_score": 0.65,
+    "key": "podfather::junior software engineer",
+    "reason": "relocation not worth it: Standard junior role with no salary disclosed; no material advantage justifying Edinburgh relocation.",
+    "role": "Junior Software Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "predictiva::machine learning engineer": {
+    "company": "Predictiva",
+    "fit_score": 0.8,
+    "key": "predictiva::machine learning engineer",
+    "reason": "relocation not worth it: Relocation required to Edinburgh with no salary disclosed; equivalent ML engineering roles available in London without moving.",
+    "role": "Machine Learning Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "prolific::lead applied scientist": {
+    "company": "Prolific",
+    "fit_score": 0.2,
+    "key": "prolific::lead applied scientist",
+    "reason": "fit 0.20: Significant seniority mismatch: role explicitly requires 3+ years of applied ML/data science experience with real-world impact, but candidate has ~2 months as a Deployment Engineer post-graduation and academic ML experience only; while fundamentals are strong, this is a Lead-level role requiring established professional track record.",
+    "role": "Lead Applied Scientist",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "pure resourcing solutions::embedded software engineer - senior": {
+    "company": "Pure Resourcing Solutions",
+    "fit_score": 0.2,
+    "key": "pure resourcing solutions::embedded software engineer - senior",
+    "reason": "fit 0.20: Significant seniority mismatch: Dario is a fresh graduate (June 2025) with ~3 months current employment, but this is a Senior role requiring deep embedded Linux expertise and proven track record in mission-critical systems\u2014he has no professional embedded Linux or device driver experience, and his DirectX work is Windows-specific graphics, not Linux systems.",
+    "role": "Embedded Software Engineer - Senior",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "qenexus::cross-commodities quantitative researcher | leading systematic fund | london": {
+    "company": "Qenexus",
+    "fit_score": 0.2,
+    "key": "qenexus::cross-commodities quantitative researcher | leading systematic fund | london",
+    "reason": "fit 0.20: Strong Python and London-based, but significant seniority mismatch (0 years professional quant research vs. 3-4 required), no commodities market exposure, and only personal/academic signal research rather than systematic fund experience.",
+    "role": "Cross-Commodities Quantitative Researcher | Leading Systematic Fund | London",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "queen square recruitment::infra engineer": {
+    "company": "Queen Square Recruitment",
+    "fit_score": 0.28,
+    "key": "queen square recruitment::infra engineer",
+    "reason": "fit 0.28: Strong software engineer with deployment experience, but lacks essential infrastructure skills (Terraform/IaaC, DevOps, IAM Security, Monitoring & Observability) this role explicitly requires.",
+    "role": "Infra Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "radley james::quantitative researcher": {
+    "company": "Radley James",
+    "fit_score": 0.77,
+    "key": "radley james::quantitative researcher",
+    "reason": "role unavailable: page not found \u2014 https://jobs.ashbyhq.com/radleyjames returned a 404/dead page, so the Radley James careers listing does not exist at this URL",
+    "role": "Quantitative Researcher",
+    "role_url": "https://jobs.ashbyhq.com/radleyjames",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:35:51Z"
+  },
+  "radley james::systematic options trader - leading market maker": {
+    "company": "Radley James",
+    "fit_score": 0.22,
+    "key": "radley james::systematic options trader - leading market maker",
+    "reason": "fit 0.22: Strong academic fundamentals and Python skills, but lacks the required 1\u201310 years of professional options trading experience; current role is deployment engineering (data pipelines), not trading/quantitative, making this a domain mismatch for a systematic options trader position at a leading market maker.",
+    "role": "Systematic Options Trader - Leading Market Maker",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "raspberry pi::principal software engineer - web team": {
+    "company": "Raspberry Pi",
+    "fit_score": 0.08,
+    "key": "raspberry pi::principal software engineer - web team",
+    "reason": "fit 0.08: Critical mismatch: role requires substantial Ruby/Rails production experience and technical leadership; candidate has no Ruby/Rails background (specializes in Python ML and C++ graphics), only 5 months current role, and is far too junior for a Principal-level position.",
+    "role": "Principal Software Engineer - Web Team",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "raspberry pi::software engineer": {
+    "company": "Raspberry Pi",
+    "fit_score": 0.62,
+    "key": "raspberry pi::software engineer",
+    "reason": "relocation not worth it: Requires Cambridge relocation with no salary data to justify the move; similar roles available in London without relocation.",
+    "role": "Software Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "redpanda::forward deployed engineer, networking": {
+    "company": "Redpanda",
+    "fit_score": 0.18,
+    "key": "redpanda::forward deployed engineer, networking",
+    "reason": "fit 0.18: Strong fundamentals and recent deployment experience, but critically lacks enterprise cloud networking (VPC architecture, private connectivity, identity-aware proxies) and SaaS-to-private-network integration experience; too junior (2 months deployment engineering post-graduation) for a mid-level FDE role requiring enterprise customer-facing architecture work; location mismatch (London vs SF/Austin/NY).",
+    "role": "Forward Deployed Engineer, Networking",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "redtech recruitment::experimental physicist - graduate considered": {
+    "company": "RedTech Recruitment",
+    "fit_score": 0.25,
+    "key": "redtech recruitment::experimental physicist - graduate considered",
+    "reason": "fit 0.25: Candidate meets educational requirements (Cambridge Physics 2:1, AAA+ A-levels) but lacks critical hands-on experience with infrared sensors, detectors, and optical laboratory systems explicitly required for this experimental physicist role; additionally, likely does not meet the 10+ year UK residency requirement for DV security clearance eligibility (appears to be recent graduate with Italian native language; ~5-7 years UK presence).",
+    "role": "Experimental Physicist - Graduate Considered",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "revolte.ai::artificial intelligence engineer": {
+    "company": "revolte.ai",
+    "fit_score": 0.58,
+    "key": "revolte.ai::artificial intelligence engineer",
+    "reason": "fit 0.58: Strong fit for core AI agent and LLM work with proven production systems experience, but significantly junior (under 1 year professional) versus the 1\u20135 years expected, plus notable gaps in TypeScript/web frameworks and cloud platforms that seem important for the product-focused role.",
+    "role": "Artificial Intelligence Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "ricoh::field service engineer - rgc": {
+    "company": "Ricoh",
+    "fit_score": 0.08,
+    "key": "ricoh::field service engineer - rgc",
+    "reason": "fit 0.08: Significant mismatch: Dario is a software engineer seeking software roles, not field technician work; lacks production-print equipment expertise; geographically misaligned (London vs. South Wales field-based); career regression from deployment engineer to hardware service technician.",
+    "role": "Field Service Engineer - RGC",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "ripple::senior software engineer, c++ / rust": {
+    "company": "Ripple",
+    "fit_score": 0.1,
+    "key": "ripple::senior software engineer, c++ / rust",
+    "reason": "fit 0.10: Severe seniority mismatch: role requires 5+ years hands-on experience but candidate has ~2 months as deployment engineer; also lacks critical required skills (Rust, WebAssembly, blockchain experience) and is entry-level despite strong academic background.",
+    "role": "Senior Software Engineer, C++ / Rust",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "salesforce::forward deployed engineer": {
+    "company": "Salesforce",
+    "fit_score": 0.15,
+    "key": "salesforce::forward deployed engineer",
+    "reason": "fit 0.15: Severe seniority mismatch: role requires 5+ years of professional hands-on delivery experience, but candidate has only 2-3 months of software engineering experience; additionally, CV shows zero Salesforce platform experience, which is a core requirement.",
+    "role": "Forward Deployed Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "sanderson::client implementation engineer": {
+    "company": "Sanderson",
+    "fit_score": 0.72,
+    "key": "sanderson::client implementation engineer",
+    "reason": "relocation not worth it: Relocation to Glasgow without stated salary premium, unique prestige, or once-in-a-career opportunity; equivalent London FinTech roles likely available.",
+    "role": "Client Implementation Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "saragossa::kubernetes engineer (on prem) - hedge fund": {
+    "company": "Saragossa",
+    "fit_score": 0.32,
+    "key": "saragossa::kubernetes engineer (on prem) - hedge fund",
+    "reason": "fit 0.32: Missing the core requirement of solid Kubernetes/OpenShift production experience despite strong Python skills, current deployment engineering role, and perfect location match; also relatively junior (2.5 months in current role) for a hedge-fund platform engineering position.",
+    "role": "Kubernetes Engineer (on prem) - Hedge Fund",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "satfocus ltd::part-time digital marketing & ai optimization expert (lead gen / local seo)": {
+    "company": "SatFocus Ltd",
+    "fit_score": 0.2,
+    "key": "satfocus ltd::part-time digital marketing & ai optimization expert (lead gen / local seo)",
+    "reason": "fit 0.20: Dario is a software engineer with strong ML and systems fundamentals, but this digital marketing role requires SEO, WordPress, PPC, and social media expertise\u2014skills entirely absent from the CV\u2014making it a career step backward into an unfamiliar domain.",
+    "role": "Part-Time Digital Marketing & AI Optimization Expert (Lead Gen / Local SEO)",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "scc::ai engineer": {
+    "company": "SCC",
+    "fit_score": 0.61,
+    "key": "scc::ai engineer",
+    "reason": "relocation not worth it: Salary (\u00a345k) is below London market rates for equivalent AI Engineer roles; no material relocation benefit.",
+    "role": "AI Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "selby jennings::data scientist - multi strategy hedge fund": {
+    "company": "Selby Jennings",
+    "fit_score": 0.68,
+    "key": "selby jennings::data scientist - multi strategy hedge fund",
+    "reason": "role unavailable: page not found \u2014 https://jobs.ashbyhq.com/selbyjennings returned a 404/empty jobs board, no listings accessible",
+    "role": "Data Scientist - Multi Strategy Hedge Fund",
+    "role_url": "https://jobs.ashbyhq.com/selbyjennings",
+    "status": "skipped",
+    "timestamp": "2026-06-16T21:11:12Z"
+  },
+  "selby jennings::ml engineer": {
+    "company": "Selby Jennings",
+    "fit_score": 0.25,
+    "key": "selby jennings::ml engineer",
+    "reason": "fit 0.25: Significant seniority mismatch: role explicitly requires 3+ years of professional ML experience on large datasets; candidate has ~2 months of deployment engineering work post-graduation, plus missing key requirements (Spark/Scala, containerization experience).",
+    "role": "ML Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "six::senior quantitative analyst (8047)": {
+    "company": "SIX",
+    "fit_score": 0.2,
+    "key": "six::senior quantitative analyst (8047)",
+    "reason": "fit 0.20: Strong technical foundations (Python, SQL, ML) and quantitative academic background, but severe seniority mismatch (applying for Senior role with 0 years capital markets experience vs. 2+ required) and no professional quant research/trading experience\u2014personal trading bot shows interest but doesn't fulfill professional requirements.",
+    "role": "Senior Quantitative Analyst (8047)",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "sortera bio::research / senior scientist": {
+    "company": "Sortera Bio",
+    "fit_score": 0.05,
+    "key": "sortera bio::research / senior scientist",
+    "reason": "fit 0.05: Candidate is a software engineer with physics and data science background; role requires molecular biologist/antibody engineer with hands-on wet-lab expertise (qPCR, Gibson assembly, site-directed mutagenesis) that candidate completely lacks, despite having desirable Python skill.",
+    "role": "Research / Senior Scientist",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "sotalent::data scientist": {
+    "company": "SoTalent",
+    "fit_score": 0.8,
+    "key": "sotalent::data scientist",
+    "reason": "role unavailable: careers page at https://jobs.ashbyhq.com/sotalent returned \"page not found\" \u2014 the SoTalent Ashby job board does not exist or has no listings",
+    "role": "Data Scientist",
+    "role_url": "https://jobs.ashbyhq.com/sotalent",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:31:06Z"
+  },
+  "southbank-it::forward deployed engineer": {
+    "company": "Southbank-IT",
+    "fit_score": 0.28,
+    "key": "southbank-it::forward deployed engineer",
+    "reason": "fit 0.28: Recent graduate with early-stage startup experience lacks essential Azure and JavaScript/TypeScript skills; significant seniority gap for an enterprise consulting role requiring customer stakeholder management, solution architecture, and multi-team leadership.",
+    "role": "Forward Deployed Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "stanley david and associates::artificial intelligence engineer with investment banking industry exp": {
+    "company": "Stanley David and Associates",
+    "fit_score": 0.2,
+    "key": "stanley david and associates::artificial intelligence engineer with investment banking industry exp",
+    "reason": "fit 0.20: Strong ML fundamentals and recent GenAI experience with Claude (trading bot), but critical seniority gap: role requires 3+ years professional ML/AI engineering and specific MLOps/cloud tooling (MLflow, AWS/Azure, Databricks) while candidate has zero years dedicated professional ML/AI experience (only 2.5 months in a non-ML deployment role); title mentions 'investment banking industry exp' not listed in requirements, suggesting possible repost.",
+    "role": "Artificial Intelligence Engineer with Investment banking industry exp",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "sumitomo group::s&t - credit systematic trading developer - director": {
+    "company": "Sumitomo Group",
+    "fit_score": 0.08,
+    "key": "sumitomo group::s&t - credit systematic trading developer - director",
+    "reason": "fit 0.08: Entry-level engineer with 2 months of professional experience applying for a Director-level role requiring 7+ years in credit trading systems; critical gaps in Java, FIX protocol, Kafka, KDB+, React, and credit market domain knowledge.",
+    "role": "S&T - Credit Systematic Trading Developer - Director",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "synthera ai::machine learning researcher": {
+    "company": "Synthera AI",
+    "fit_score": 0.3,
+    "key": "synthera ai::machine learning researcher",
+    "reason": "fit 0.30: Strong ML fundamentals and Python skills, but explicit PhD requirement (candidate has MPhil) and significant domain expertise gap\u2014no demonstrated capital markets or quantitative finance background, only a trading bot project; role requires deep financial time-series understanding which isn't evidenced.",
+    "role": "Machine Learning Researcher",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "targetjobs uk::data scientist graduate": {
+    "company": "targetjobs UK",
+    "fit_score": 0.68,
+    "key": "targetjobs uk::data scientist graduate",
+    "reason": "role unavailable: page not found \u2014 https://jobs.ashbyhq.com/targetjobsuk returned a dead/404 page with no job listings",
+    "role": "Data Scientist Graduate",
+    "role_url": "https://jobs.ashbyhq.com/targetjobsuk",
+    "status": "skipped",
+    "timestamp": "2026-06-16T21:09:14Z"
+  },
+  "targetjobs uk::graduate software engineer": {
+    "company": "targetjobs UK",
+    "fit_score": 0.76,
+    "key": "targetjobs uk::graduate software engineer",
+    "reason": "relocation not worth it: Maidenhead requires relocation; no salary figures provided to confirm \u00a310k+ premium over London graduate schemes; defensible role but not uniquely exceptional for this career stage.",
+    "role": "Graduate Software Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "tata consultancy services::ai engineer": {
+    "company": "Tata Consultancy Services",
+    "fit_score": 0.6,
+    "key": "tata consultancy services::ai engineer",
+    "reason": "relocation not worth it: Relocation to Manchester required, no salary disclosed, and TCS is not sufficiently prestigious or offering unique opportunity to warrant the move from London.",
+    "role": "AI Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "technical futures ltd::software engineer, c++": {
+    "company": "Technical Futures Ltd",
+    "fit_score": 0.2,
+    "key": "technical futures ltd::software engineer, c++",
+    "reason": "fit 0.20: Dario has strong C++ fundamentals and desirable skills (Python, C#, low-level programming, memory management), but falls critically short on the primary requirement: the role needs 3+ years of professional C++ development experience, while his deployment engineer role started only 2 months ago with no prior software engineering roles.",
+    "role": "Software Engineer, C++",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "the children's society::assistant shop manager": {
+    "company": "THE CHILDREN'S SOCIETY",
+    "fit_score": 0.0,
+    "key": "the children's society::assistant shop manager",
+    "reason": "salary: max \u00a320,908 below floor \u00a340,000",
+    "role": "Assistant Shop Manager",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "the guinness partnership::senior systems developer": {
+    "company": "The Guinness Partnership",
+    "fit_score": 0.2,
+    "key": "the guinness partnership::senior systems developer",
+    "reason": "fit 0.20: Senior role requiring 5-10+ years of experience and proven people management, but candidate is a 2025 graduate with 2 months of professional experience; further mismatched by lack of domain experience (Housing/Repairs Management systems) and enterprise Microsoft stack (.NET, Dynamics 365, Azure) which form the core of this role.",
+    "role": "Senior Systems Developer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "tmx group::index product developer": {
+    "company": "TMX GROUP",
+    "fit_score": 0.3,
+    "key": "tmx group::index product developer",
+    "reason": "fit 0.30: Strong technical foundation (Python, SQL, quantitative analysis) and relevant Master's degree, but zero years of required financial services experience\u2014the role explicitly asks for 1\u20133 years in index product development, quantitative asset management, or structured products, and Dario lacks domain expertise in index mechanics, portfolio construction, factor investing, and the ETF ecosystem.",
+    "role": "Index Product Developer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "trafigura::forward deployment engineer": {
+    "company": "Trafigura",
+    "fit_score": 0.08,
+    "key": "trafigura::forward deployment engineer",
+    "reason": "fit 0.08: Severe seniority mismatch (6+ years required, candidate has ~2 months professional experience), missing core tech stack (React, Node.js, PostgreSQL, AWS, Docker, Kubernetes, GitLab CI/CD), and no enterprise/financial services background despite explicit 2+ year requirement.",
+    "role": "Forward Deployment Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "transport for london::engineer - systems performance & integration (b3)": {
+    "company": "Transport for London",
+    "fit_score": 0.78,
+    "key": "transport for london::engineer - systems performance & integration (b3)",
+    "reason": "role unavailable: page not found \u2014 the Transport for London careers page at jobs.ashbyhq.com/transportforlondon returned a dead page (404/no content)",
+    "role": "Engineer - Systems Performance & Integration (B3)",
+    "role_url": "https://jobs.ashbyhq.com/transportforlondon",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:33:17Z"
+  },
+  "tripadvisor::junior software engineer": {
+    "company": "Tripadvisor",
+    "fit_score": 0.82,
+    "key": "tripadvisor::junior software engineer",
+    "reason": "session error: Claude Code returned an error result: Reached maximum number of turns (60)",
+    "role": "Junior Software Engineer",
+    "role_url": "https://job-boards.greenhouse.io/tripadvisor/jobs/6903058",
+    "status": "failed",
+    "timestamp": "2026-06-16T20:28:52Z"
+  },
+  "twilio::frontend software engineer": {
+    "company": "Twilio",
+    "fit_score": 0.2,
+    "key": "twilio::frontend software engineer",
+    "reason": "fit 0.20: Severe tech stack mismatch: role requires 2+ years React/TypeScript/Playwright frontend experience, but candidate's entire background is backend/ML/systems work with no JavaScript, React, or frontend development experience listed.",
+    "role": "Frontend Software Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "ucl::lecturer in translational neuroscience": {
+    "company": "UCL",
+    "fit_score": 0.05,
+    "key": "ucl::lecturer in translational neuroscience",
+    "reason": "fit 0.05: Critical mismatches: role requires a PhD in neuroscience/related field (candidate has MPhil in Data Science with physics background), university teaching experience in neuroscience (candidate has none), research funding track record (candidate is early-career in startup engineering), and mid-career seniority (candidate is fresh graduate); geographic location is suitable but cannot overcome fundamental qualification gaps.",
+    "role": "Lecturer in Translational Neuroscience",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "ucl::research fellow \u2013 genetic epidemiologist": {
+    "company": "UCL",
+    "fit_score": 0.08,
+    "key": "ucl::research fellow \u2013 genetic epidemiologist",
+    "reason": "fit 0.08: Candidate lacks the essential PhD requirement, has no experience in genetic epidemiology methods (GWAS, Mendelian randomisation, UK Biobank), no R programming, no research publications, and is career-stage mismatched (junior deployment engineer vs. post-doctoral Research Fellow role).",
+    "role": "Research Fellow \u2013 Genetic Epidemiologist",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "ucl::research technician": {
+    "company": "UCL",
+    "fit_score": 0.0,
+    "key": "ucl::research technician",
+    "reason": "salary: max \u00a335,575 below floor \u00a340,000",
+    "role": "Research Technician",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "uk government - office for standards in education, children's services and skills::.net developer/engineer": {
+    "company": "UK Government - Office for Standards in Education, Children's Services and Skills",
+    "fit_score": 0.28,
+    "key": "uk government - office for standards in education, children's services and skills::.net developer/engineer",
+    "reason": "fit 0.28: Technical stack mismatch: role requires demonstrated Azure, .NET/C# production API experience, and Azure DevOps expertise; Dario's background is ML/data/scientific computing with no evidence of .NET ecosystem or cloud platform experience despite general engineering capability.",
+    "role": ".NET Developer/Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "ultra electronics::embedded software / firmware engineer": {
+    "company": "Ultra Electronics",
+    "fit_score": 0.42,
+    "key": "ultra electronics::embedded software / firmware engineer",
+    "reason": "fit 0.42: Strong C++ and ML fundamentals, but this firmware/FPGA-focused defense role misaligns with your ML and systems background\u2014missing core embedded skills (bare-metal MCU, FPGA, embedded Linux, hardware design) despite learning ability.",
+    "role": "Embedded Software / Firmware Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "unity::data center infrastructure and automation engineer": {
+    "company": "Unity",
+    "fit_score": 0.25,
+    "key": "unity::data center infrastructure and automation engineer",
+    "reason": "fit 0.25: Candidate lacks essential infrastructure/DevOps skills (Linux systems administration, Bash, Ansible, Go, networking) and has no demonstrated data center, hardware troubleshooting, or containerization experience required for this specialist role.",
+    "role": "Data Center Infrastructure and Automation Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "unity::senior software engineer": {
+    "company": "Unity",
+    "fit_score": 0.25,
+    "key": "unity::senior software engineer",
+    "reason": "fit 0.25: Significant seniority mismatch (recently graduated with 2 months current production experience for a senior mentorship role) and missing critical required skills: no production C codebase experience (only C++), zero macOS development background (IOKit, CoreGraphics), and no evidence of shipping at scale to millions of users.",
+    "role": "Senior Software Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "university of oxford::postdoctoral research scientist": {
+    "company": "University of Oxford",
+    "fit_score": 0.08,
+    "key": "university of oxford::postdoctoral research scientist",
+    "reason": "fit 0.08: Essential credential mismatch: role requires PhD/DPhil in medicine, public health, epidemiology, or biomedicine; candidate has MPhil in Data Science with physics background and is currently a deployment engineer, not a researcher pursuing doctoral study.",
+    "role": "Postdoctoral Research Scientist",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "university of oxford::postdoctoral researcher: adverse childhood experiences": {
+    "company": "University of Oxford",
+    "fit_score": 0.15,
+    "key": "university of oxford::postdoctoral researcher: adverse childhood experiences",
+    "reason": "fit 0.15: Dario lacks the required PhD/DPhil in a relevant discipline (he has an MPhil in Data Science, not psychiatry/health research), has no experience working with vulnerable adolescents or in clinical/mental health research, and his physics/software engineering background does not provide the specialist disciplinary knowledge this postdoctoral psychiatry role requires.",
+    "role": "Postdoctoral Researcher: Adverse Childhood Experiences",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "university of sheffield::research associate - sustainability of the care home market across england": {
+    "company": "University of Sheffield",
+    "fit_score": 0.1,
+    "key": "university of sheffield::research associate - sustainability of the care home market across england",
+    "reason": "fit 0.10: Critical seniority mismatch: role requires a PhD (essential criterion) but candidate has only an MPhil; also a domain mismatch\u2014role seeks social-care/health-economics researcher while candidate is a software engineer with physics/ML background and zero demonstrated interest in social care.",
+    "role": "Research Associate - sustainability of the care home market across England",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "validus risk management::full stack software engineer (python)": {
+    "company": "Validus Risk Management",
+    "fit_score": 0.2,
+    "key": "validus risk management::full stack software engineer (python)",
+    "reason": "fit 0.20: Severe seniority mismatch: role requires 3-5 years professional software engineering experience, but candidate has only ~2 months in current deployment role; additionally lacks professional financial domain experience despite strong technical fundamentals and excellent academic credentials.",
+    "role": "Full Stack Software Engineer (Python)",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "ventula consulting::ai / ml engineer": {
+    "company": "Ventula Consulting",
+    "fit_score": 0.58,
+    "key": "ventula consulting::ai / ml engineer",
+    "reason": "fit 0.58: Strong ML fundamentals, London location, and LLM experience via trading bot project, but lacks explicit FastAPI/Kubeflow expertise and demonstrated production ML shipping\u2014profile suggests junior potential rather than the 'excellent experience' explicitly required.",
+    "role": "AI / ML Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "venture up::c++ software engineer": {
+    "company": "Venture Up",
+    "fit_score": 0.25,
+    "key": "venture up::c++ software engineer",
+    "reason": "fit 0.25: Seniority mismatch: role requires 2+ years professional C++/Python experience, but candidate has only ~2 months professional software engineering experience; also lacks demonstrated expertise in Postgres at scale, Pandas, FIX protocol, and finance/execution systems.",
+    "role": "C++ Software Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "venture up::quantitative researcher": {
+    "company": "Venture Up",
+    "fit_score": 0.35,
+    "key": "venture up::quantitative researcher",
+    "reason": "fit 0.35: Strong quantitative education and Python/ML skills, but lacks the required 2+ years of professional trading or market-making experience; only a recent MPhil graduate with a personal trading bot project, not equivalent to professional HFT experience that competitive hedge funds typically screen for.",
+    "role": "Quantitative Researcher",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "vintage::paid social executive": {
+    "company": "Vintage",
+    "fit_score": 0.15,
+    "key": "vintage::paid social executive",
+    "reason": "fit 0.15: Dario is a software engineer with ML expertise significantly overqualified in wrong domain but completely unqualified in required domain\u2014lacks Paid Social experience, Meta Ads Manager familiarity, and performance marketing background, making this a major career regression.",
+    "role": "Paid Social Executive",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "virgin media o2::data scientist": {
+    "company": "Virgin Media O2",
+    "fit_score": 0.7,
+    "key": "virgin media o2::data scientist",
+    "reason": "role unavailable: page not found \u2014 the Virgin Media O2 Ashby careers page (https://jobs.ashbyhq.com/virginmediao2) returned a dead/404 page, so the role cannot be located or applied to.",
+    "role": "Data Scientist",
+    "role_url": "https://jobs.ashbyhq.com/virginmediao2",
+    "status": "skipped",
+    "timestamp": "2026-06-16T21:00:48Z"
+  },
+  "vita cv::junior graphic designer \u2013 part-time remote": {
+    "company": "VITA CV",
+    "fit_score": 0.0,
+    "key": "vita cv::junior graphic designer \u2013 part-time remote",
+    "reason": "salary: max \u00a331,200 below floor \u00a340,000",
+    "role": "Junior Graphic Designer \u2013 Part-Time Remote",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "wanstor::senior technical architect (microsoft 365)": {
+    "company": "Wanstor",
+    "fit_score": 0.08,
+    "key": "wanstor::senior technical architect (microsoft 365)",
+    "reason": "fit 0.08: Critical seniority and domain mismatch: this Senior Technical Architect role requires deep Microsoft 365/Azure expertise, team leadership, and relevant certifications, while the candidate is a junior contractor (2 months experience) with a background in ML and systems programming, zero Microsoft cloud experience, and no team leadership background.",
+    "role": "Senior Technical Architect (Microsoft 365)",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "weareaspire::head of quantitative": {
+    "company": "WeAreAspire",
+    "fit_score": 0.05,
+    "key": "weareaspire::head of quantitative",
+    "reason": "fit 0.05: Severe seniority mismatch: candidate is a junior engineer with 5 months of work experience and zero team leadership background; role requires a proven senior leader managing quantitative research teams and complex global programmes in commercial consulting environments.",
+    "role": "Head of Quantitative",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "why hiring::junior data scientist": {
+    "company": "Why Hiring",
+    "fit_score": 0.3,
+    "key": "why hiring::junior data scientist",
+    "reason": "fit 0.30: Likely spam posting (blank location field, generic 'Why Hiring' company, template-heavy description with formatting issues), and candidate is overqualified\u2014holds an MPhil in Data Intensive Science with recent production ML/data engineering experience for a junior-level role.",
+    "role": "Junior Data Scientist",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "wolters kluwer::lead cx/ux designer": {
+    "company": "Wolters Kluwer",
+    "fit_score": 0.08,
+    "key": "wolters kluwer::lead cx/ux designer",
+    "reason": "fit 0.08: This is a Lead UX/CX Designer role requiring 10+ years of design leadership and team management; the candidate is a 5-year software engineer with zero design expertise, no people leadership, no Figma/design systems knowledge, and no regulated-industry background\u2014a fundamental discipline and seniority mismatch.",
+    "role": "Lead CX/UX Designer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "xantura::senior ml ops engineer": {
+    "company": "Xantura",
+    "fit_score": 0.2,
+    "key": "xantura::senior ml ops engineer",
+    "reason": "fit 0.20: Strong fundamentals and Cambridge education, but critical seniority mismatch (2 months relevant experience vs. 4+ years required for Senior role) and lacks essential technical stack (Azure MLOps, Kubernetes, Dagster, CI/CD pipelines, IaC, observability tools).",
+    "role": "Senior ML Ops Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "yo hr consultancy::data scientist - remote": {
+    "company": "YO HR Consultancy",
+    "fit_score": 0.4,
+    "key": "yo hr consultancy::data scientist - remote",
+    "reason": "fit 0.40: Candidate has strong relevant skills (MPhil in Data Intensive Science, Python, statistical modeling, production ML experience), but the job posting has red flags suggesting it may be a data-annotation role disguised as data science\u2014'no prior AI experience required' contradicts the title, and the focus on data collection/cleaning rather than modeling indicates a potential spam repost or overspecified junior role that would underutilize their qualifications.",
+    "role": "Data Scientist - Remote",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  },
+  "zealous agency::ai research engineer": {
+    "company": "Zealous Agency",
+    "fit_score": 0.2,
+    "key": "zealous agency::ai research engineer",
+    "reason": "fit 0.20: Candidate lacks the core required expertise: no reinforcement learning experience, post-training (RLHF/GRPO), RL environments, or distributed training background; this founding researcher role requires deep RL specialization they don't possess, despite strong ML fundamentals.",
+    "role": "AI Research Engineer",
+    "role_url": "",
+    "status": "skipped",
+    "timestamp": "2026-06-16T20:16:32Z"
+  }
+}
